@@ -1,0 +1,45 @@
+/*colores*/
+/*Fuentes*/
+body {
+  font-family: "Roboto", sans-serif; }
+
+header nav {
+  background-color: white;
+  box-shadow: none; }
+  header nav img {
+    padding: 2vh;
+    width: 8vh;
+    height: 8vh; }
+header .nav-wrapper
+a {
+  color: black; }
+header .title .header-title {
+  color: #484848;
+  font-weight: 900; }
+header .title h3, header .title h5 {
+  color: #888888; }
+header .hero {
+  background: url(https://a0.muscache.com/airbnb/static/engagement/p1/large/posters_sm.jpg);
+  background-position: bottom center;
+  background-size: 1596px auto;
+  background-repeat: repeat-x;
+  left: -60px;
+  height: 75vh; }
+header .header-text {
+  margin-bottom: 1.5em; }
+header .button-header {
+  border-radius: 50px;
+  border: #E9EBEB solid;
+  width: 20em;
+  padding: 0.5em; }
+
+.formulario {
+  padding: 4vh 0vh; }
+
+.form {
+  border-radius: 1vh;
+  border: #E9EBEB solid;
+  padding: 2vh;
+  margin-bottom: 0; }
+
+/*# sourceMappingURL=main.css.map */
