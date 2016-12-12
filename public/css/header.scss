@@ -16,11 +16,14 @@ header{
 		    height: 7.5vh;
 		}
 	}
-
-	.nav-wrapper
+    
+ 
+    .nav-wrapper{
 		a{
 			color: $color-gray-dark-title;
+            cursor: pointer;
 		}
+    }
 
 	.title{
 		.header-title{
@@ -64,6 +67,17 @@ header{
         cursor: pointer;
 	}
 	
+    .modal{
+        width: 30vw;
+    }
+    
+    #login{
+        float: none;
+        background-color: $color-rojo-airbnb;
+        width: 80%;
+        color: white;
+    }
+
 }
 
 @media (max-width: 468px){
@@ -83,5 +97,10 @@ header{
             height: 79vh;
             background-size: cover;
         }
+        
+        .modal{
+            width: 70vw;
+        }
+
     }
 }

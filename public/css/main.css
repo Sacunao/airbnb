@@ -11,9 +11,9 @@ header nav {
     padding: 2vh;
     width: 7.5vh;
     height: 7.5vh; }
-header .nav-wrapper
-a {
-  color: #484848; }
+header .nav-wrapper a {
+  color: #484848;
+  cursor: pointer; }
 header .title .header-title {
   color: #484848;
   font-weight: 900;
@@ -40,6 +40,13 @@ header .button-header {
   color: #717171;
   font-weight: 500;
   cursor: pointer; }
+header .modal {
+  width: 30vw; }
+header #login {
+  float: none;
+  background-color: #FF7E82;
+  width: 80%;
+  color: white; }
 
 @media (max-width: 468px) {
   header .title .header-title {
@@ -50,6 +57,8 @@ header .button-header {
     font-size: 1.7em; }
   header .hero {
     height: 79vh;
-    background-size: cover; } }
+    background-size: cover; }
+  header .modal {
+    width: 70vw; } }
 
 /*# sourceMappingURL=main.css.map */
