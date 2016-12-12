@@ -10,14 +10,109 @@
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--Import materialize.css-->
 	<link type="text/css" rel="stylesheet" href="css/vendor/materialize.min.css"  media="screen,projection"/>
+	<!--Font Awesome-->
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<!--User CSS-->
+	<link type="text/css" rel="stylesheet" href="css/main.scss"/>	
 	<link rel="shortcut icon" type="img/png" href="img/logo.png">
 </head>
 <body>
-	<h1>hola</h1>
+<!-- 		Barra de Búsqueda -->
+		<section class="formulario">
+			<div class="container">
+				<div class="row">
+					<div class="col l4">
+						<div class="input-field">
+							<input id="pac-input" placeholder="Destino, ciudad, dirección" type="text" class="validate">
+							<label for="first_name">Dónde</label>
+						</div>
+					</div>
+					<div class="col l2">
+						<label for="first_name">Llegada</label>
+						<input type="date" class="datepicker">
+					</div>
+					<div class="col l2">
+						<label for="first_name">Salida</label>
+						<input type="date" class="datepicker">
+					</div>
+					<div class="col l2">
+						<label for="first_name">Huéspedes</label>
+						<select class="browser-default">
+							<option value="1">1 huésped</option>
+							<option value="2">2 huéspedes</option>
+							<option value="3">3 huéspedes</option>
+							<option value="4">4 huéspedes</option>
+						</select>
+					</div>
+					<div class="col l2">
+						<div class="file-field input-field">
+							<div class="btn red">
+								<span>Buscar</span>
+							</div>					
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+<!-- 		Fin de Barra de Búsqueda -->
+<!-- Modal Trigger -->
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 show-sm">
+				  	<a class="waves-effect waves-light btn" href="#modal1">Buscar</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
+<!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+    		<section class="formulario-modal">
+			<div class="container">
+				<div class="row form-modal">
+					<div class="col l4">
+						<div class="input-field">
+							<input id="pac-input" placeholder="Destino, ciudad, dirección" type="text" class="validate">
+							<label for="first_name">Dónde</label>
+						</div>
+					</div>
+					<div class="col l2">
+						<label for="first_name">Llegada</label>
+						<input type="date" class="datepicker">
+					</div>
+					<div class="col l2">
+						<label for="first_name">Salida</label>
+						<input type="date" class="datepicker">
+					</div>
+					<div class="col l2">
+						<label for="first_name">Huéspedes</label>
+						<select class="browser-default">
+							<option value="1">1 huésped</option>
+							<option value="2">2 huéspedes</option>
+							<option value="3">3 huéspedes</option>
+							<option value="4">4 huéspedes</option>
+						</select>
+					</div>
+					<div class="col l2">
+						<div class="file-field input-field">
+							<div class="btn red">
+								<span>Buscar</span>
+							</div>					
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+  </div>
 
-	<!--Import jQuery before materialize.js-->
+<!-- Google Maps-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCikajQDLIa7Bx9mkV8dl9ymwxTlHcf_io" async defer></script>	        
+<!--Fin Google Maps-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/vendor/materialize.min.js"></script>
+	<script type="text/javascript" src="js/vendor/wow.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
