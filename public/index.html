@@ -1,23 +1,768 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-		<!--Let browser know website is optimized for mobile-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Te espera un mundo de viajes inolvidables</title>
-	<!--Import Google Icon Font-->
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!--Import materialize.css-->
-	<link type="text/css" rel="stylesheet" href="css/vendor/materialize.min.css"  media="screen,projection"/>
-	<link rel="shortcut icon" type="img/png" href="img/logo.png">
+  <meta charset="UTF-8">
+   <meta name="viewport" content="initial-scale=1.0">
+  <title>Airbnb|Search</title>
+  <link rel="shortcut icon" href="img/logotype_favicon.ico">
+  <link rel="stylesheet" href="css/vendor/materialize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/vendor/nouislider.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<h1>hola</h1>
-
-
-	<!--Import jQuery before materialize.js-->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="js/vendor/materialize.min.js"></script>
+  <header>
+    <!--nav-->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo logo">
+                    <img class="responsive-img" src="img/logotype_favicon.ico">
+                </a>
+                <nav class="navbar-search">
+                    <div class="nav-wrapper">
+                    <form>
+                        <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label for="search"><i class="material-icons">search</i></label>
+                        </div>
+                    </form>
+                    </div>
+                </nav>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Conviértete en anfitrión</a></li>
+                    <li><a href="badges.html">Ayuda</a></li>
+                    <li><a href="sass.html">Regístrate</a></li>
+                    <li><a href="badges.html">Iniciar sesión</a></li>
+                </ul>
+        </div>
+        </nav>
+    </div>   
+  </header>
+  <section class="section-search row">
+    <div class="col l7 section-search-right">
+        <div class="row">
+          <div class="col l12">
+            <div class="row">
+              <!--fechas aa-->
+                  <div class="row">
+                    <div class="input-field col l3">
+                      <label for="last_name">Fechas</label>
+                    </div>
+                    <div class="input-field col l3">
+                      <input id="llegada" type="date" class="datepicker input-border" placeholder="Llegada">
+                    </div>
+                    <div class="input-field col l3">
+                      <input id="salida" type="date" class="datepicker input-border" placeholder="Salida">
+                    </div> 
+                    <div class="input-field col l3 ">
+                      <select class="browser-default input-border">
+                        <option value="1">1 huésped</option>
+                        <option value="2">2 huéspedes</option>
+                        <option value="3">3 huéspedes</option>
+                      </select>
+                    </div>             
+                  </div>
+                  <div class="divider divider-margin"></div>
+              <!--tipo de habitación-->
+                  <div class="row">
+                    <div class="input-field col l3">
+                      <label for="last_name">Tipo de habitación<i class="small material-icons">&#xE887;</i></label>
+                    </div>
+                    <div class="input-field col l3">
+                      <div>
+                        <label for="#">
+                          <div class="cntn-checkbox"><i class="material-icons">&#xE88A;</i></div>
+                          <p class="cntn-checkbox">
+                            <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                            <label for="filled-in-box">Casa entera</label>
+                          </p>                           
+                        </label>
+                      </div>
+                      <!-- <input id="casa" type="text" class="input-border" placeholder="Casa entera">-->
+                    </div>
+                    <div class="input-field col l3">
+                      <input id="habitacionP" type="text" class="input-border" placeholder="Habitación privada">
+                    </div> 
+                    <div class="input-field col l3 ">
+                      <input id="habitacionC" type="text" class="input-border" placeholder="Habitación compartida">
+                    </div>             
+                  </div>
+                  <div class="divider divider-margin"></div>
+              <!--rango de precios-->
+                  <div class="row">
+                    <div class="input-field col l3">
+                      <label for="last_name">Rango de precios</label>
+                    </div>
+                    <div class="input-field col l9">
+                      <input id="rango" type="text">
+                    </div>            
+                  </div>
+                  <div class="divider divider-margin"></div>
+                </div>
+              <!--reserva inmediata-->
+              <div class="row">
+                <div class="input-field col l3">
+                  <label for="last_name"><i class="material-icons">&#xE3E7;</i>Reserva inmediata</label>
+                </div>
+                <div class="input-field col l5">
+                  <p>Anuncios que no requieren que el anfitrión acepte la solicitud.</p>
+                </div>
+                <div class="input-field col l4">
+                    <div class="switch">
+                      <label>
+                        Off
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        On
+                      </label>
+                    </div>
+                </div>            
+              </div>
+              <div class="divider divider-margin"></div>
+            </div>
+            <div class="row">
+              <div class="col l12">
+                <div class="row">
+                  <div class="col l6">
+                    <a class="waves-effect waves-light btn">Filtros</a>
+                  </div>
+                  <div class="col l6">
+                    <p>Más de 300 alquileres</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <p>Introduce las fechas para ver el precio total. Ten en cuenta que se aplicarán tarifas adicionales y es posible que se añadan impuestos.</p>
+                </div>
+              </div>    
+            </div>
+            <div class="row">
+              <div class="col l12">
+                <div class="row">
+                  <div class="col l6">
+                    <div class="row row-position">
+                      <i class="heart-search material-icons">&#xE87E;</i>
+                      <img src="img/original.jpg" alt="" class="responsive-img">
+                      <a href="#">
+                        <div class="price-bg">
+                          <sup>S/.</sup>
+                          <span>140</span>   
+                        </div>
+                      </a>
+                      <img src="img/imagen-circular.jpg" alt="" class="circle-search circle responsive-img">
+                    </div>
+                    <div class="row">
+                      <span>Double room in lge Victorian house</span>
+                    </div>  
+                    <div class="row color-gris font-size-14px">
+                      <span>Habitación privada</span>
+                      <span>1 huésped</span>
+                      <span>
+                        <div class="cnt-general-starts">
+                          <div class="cnt-starts">
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE839;</i>
+                            <i class="xtra-small material-icons">&#xE83A;</i>
+                          </div>
+                        </div>
+                      </span>
+                      <span>180 eval</span>
+                    </div>                  
+                  </div>
+                   <div class="col l6">
+                    <div class="row row-position">
+                      <i class="heart-search material-icons">&#xE87E;</i>
+                      <img src="img/original.jpg" alt="" class="responsive-img">
+                      <a href="#">
+                        <div class="price-bg">
+                          <sup>S/.</sup>
+                          <span>140</span>   
+                        </div>
+                      </a>
+                      <img src="img/imagen-circular.jpg" alt="" class="circle-search circle responsive-img">
+                    </div>
+                    <div class="row">
+                      <span>Double room in lge Victorian house</span>
+                    </div>  
+                    <div class="row color-gris font-size-14px">
+                      <span>Habitación privada</span>
+                      <span>1 huésped</span>
+                      <span>
+                        <div class="cnt-general-starts">
+                          <div class="cnt-starts">
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE839;</i>
+                            <i class="xtra-small material-icons">&#xE83A;</i>
+                          </div>
+                        </div>
+                      </span>
+                      <span>180 eval</span>
+                    </div>                  
+                  </div>
+                </div>
+                <div class="row">
+                                    <div class="col l6">
+                    <div class="row row-position">
+                      <i class="heart-search material-icons">&#xE87E;</i>
+                      <img src="img/original.jpg" alt="" class="responsive-img">
+                      <a href="#">
+                        <div class="price-bg">
+                          <sup>S/.</sup>
+                          <span>140</span>   
+                        </div>
+                      </a>
+                      <img src="img/imagen-circular.jpg" alt="" class="circle-search circle responsive-img">
+                    </div>
+                    <div class="row">
+                      <span>Double room in lge Victorian house</span>
+                    </div>  
+                    <div class="row color-gris font-size-14px">
+                      <span>Habitación privada</span>
+                      <span>1 huésped</span>
+                      <span>
+                        <div class="cnt-general-starts">
+                          <div class="cnt-starts">
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE839;</i>
+                            <i class="xtra-small material-icons">&#xE83A;</i>
+                          </div>
+                        </div>
+                      </span>
+                      <span>180 eval</span>
+                    </div>                  
+                  </div>
+                                    <div class="col l6">
+                    <div class="row row-position">
+                      <i class="heart-search material-icons">&#xE87E;</i>
+                      <img src="img/original.jpg" alt="" class="responsive-img">
+                      <a href="#">
+                        <div class="price-bg">
+                          <sup>S/.</sup>
+                          <span>140</span>   
+                        </div>
+                      </a>
+                      <img src="img/imagen-circular.jpg" alt="" class="circle-search circle responsive-img">
+                    </div>
+                    <div class="row">
+                      <span>Double room in lge Victorian house</span>
+                    </div>  
+                    <div class="row color-gris font-size-14px">
+                      <span>Habitación privada</span>
+                      <span>1 huésped</span>
+                      <span>
+                        <div class="cnt-general-starts">
+                          <div class="cnt-starts">
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE839;</i>
+                            <i class="xtra-small material-icons">&#xE83A;</i>
+                          </div>
+                        </div>
+                      </span>
+                      <span>180 eval</span>
+                    </div>                  
+                  </div>                 
+                </div>
+                <div class="row">
+                                    <div class="col l6">
+                    <div class="row row-position">
+                      <i class="heart-search material-icons">&#xE87E;</i>
+                      <img src="img/original.jpg" alt="" class="responsive-img">
+                      <a href="#">
+                        <div class="price-bg">
+                          <sup>S/.</sup>
+                          <span>140</span>   
+                        </div>
+                      </a>
+                      <img src="img/imagen-circular.jpg" alt="" class="circle-search circle responsive-img">
+                    </div>
+                    <div class="row">
+                      <span>Double room in lge Victorian house</span>
+                    </div>  
+                    <div class="row color-gris font-size-14px">
+                      <span>Habitación privada</span>
+                      <span>1 huésped</span>
+                      <span>
+                        <div class="cnt-general-starts">
+                          <div class="cnt-starts">
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE839;</i>
+                            <i class="xtra-small material-icons">&#xE83A;</i>
+                          </div>
+                        </div>
+                      </span>
+                      <span>180 eval</span>
+                    </div>                  
+                  </div>
+                                    <div class="col l6">
+                    <div class="row row-position">
+                      <i class="heart-search material-icons">&#xE87E;</i>
+                      <img src="img/original.jpg" alt="" class="responsive-img">
+                      <a href="#">
+                        <div class="price-bg">
+                          <sup>S/.</sup>
+                          <span>140</span>   
+                        </div>
+                      </a>
+                      <img src="img/imagen-circular.jpg" alt="" class="circle-search circle responsive-img">
+                    </div>
+                    <div class="row">
+                      <span>Double room in lge Victorian house</span>
+                    </div>  
+                    <div class="row color-gris font-size-14px">
+                      <span>Habitación privada</span>
+                      <span>1 huésped</span>
+                      <span>
+                        <div class="cnt-general-starts">
+                          <div class="cnt-starts">
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE839;</i>
+                            <i class="xtra-small material-icons">&#xE83A;</i>
+                          </div>
+                        </div>
+                      </span>
+                      <span>180 eval</span>
+                    </div>                  
+                  </div>                  
+                </div>
+                <div class="row">
+                                    <div class="col l6">
+                    <div class="row row-position">
+                      <i class="heart-search material-icons">&#xE87E;</i>
+                      <img src="img/original.jpg" alt="" class="responsive-img">
+                      <a href="#">
+                        <div class="price-bg">
+                          <sup>S/.</sup>
+                          <span>140</span>   
+                        </div>
+                      </a>
+                      <img src="img/imagen-circular.jpg" alt="" class="circle-search circle responsive-img">
+                    </div>
+                    <div class="row">
+                      <span>Double room in lge Victorian house</span>
+                    </div>  
+                    <div class="row color-gris font-size-14px">
+                      <span>Habitación privada</span>
+                      <span>1 huésped</span>
+                      <span>
+                        <div class="cnt-general-starts">
+                          <div class="cnt-starts">
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE839;</i>
+                            <i class="xtra-small material-icons">&#xE83A;</i>
+                          </div>
+                        </div>
+                      </span>
+                      <span>180 eval</span>
+                    </div>                  
+                  </div>
+                                    <div class="col l6">
+                    <div class="row row-position">
+                      <i class="heart-search material-icons">&#xE87E;</i>
+                      <img src="img/original.jpg" alt="" class="responsive-img">
+                      <a href="#">
+                        <div class="price-bg">
+                          <sup>S/.</sup>
+                          <span>140</span>   
+                        </div>
+                      </a>
+                      <img src="img/imagen-circular.jpg" alt="" class="circle-search circle responsive-img">
+                    </div>
+                    <div class="row">
+                      <span>Double room in lge Victorian house</span>
+                    </div>  
+                    <div class="row color-gris font-size-14px">
+                      <span>Habitación privada</span>
+                      <span>1 huésped</span>
+                      <span>
+                        <div class="cnt-general-starts">
+                          <div class="cnt-starts">
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE839;</i>
+                            <i class="xtra-small material-icons">&#xE83A;</i>
+                          </div>
+                        </div>
+                      </span>
+                      <span>180 eval</span>
+                    </div>                  
+                  </div>                  
+                </div>
+                <div class="row">
+                                    <div class="col l6">
+                    <div class="row row-position">
+                      <i class="heart-search material-icons">&#xE87E;</i>
+                      <img src="img/original.jpg" alt="" class="responsive-img">
+                      <a href="#">
+                        <div class="price-bg">
+                          <sup>S/.</sup>
+                          <span>140</span>   
+                        </div>
+                      </a>
+                      <img src="img/imagen-circular.jpg" alt="" class="circle-search circle responsive-img">
+                    </div>
+                    <div class="row">
+                      <span>Double room in lge Victorian house</span>
+                    </div>  
+                    <div class="row color-gris font-size-14px">
+                      <span>Habitación privada</span>
+                      <span>1 huésped</span>
+                      <span>
+                        <div class="cnt-general-starts">
+                          <div class="cnt-starts">
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE839;</i>
+                            <i class="xtra-small material-icons">&#xE83A;</i>
+                          </div>
+                        </div>
+                      </span>
+                      <span>180 eval</span>
+                    </div>                  
+                  </div>
+                                    <div class="col l6">
+                    <div class="row row-position">
+                      <i class="heart-search material-icons">&#xE87E;</i>
+                      <img src="img/original.jpg" alt="" class="responsive-img">
+                      <a href="#">
+                        <div class="price-bg">
+                          <sup>S/.</sup>
+                          <span>140</span>   
+                        </div>
+                      </a>
+                      <img src="img/imagen-circular.jpg" alt="" class="circle-search circle responsive-img">
+                    </div>
+                    <div class="row">
+                      <span>Double room in lge Victorian house</span>
+                    </div>  
+                    <div class="row color-gris font-size-14px">
+                      <span>Habitación privada</span>
+                      <span>1 huésped</span>
+                      <span>
+                        <div class="cnt-general-starts">
+                          <div class="cnt-starts">
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE839;</i>
+                            <i class="xtra-small material-icons">&#xE83A;</i>
+                          </div>
+                        </div>
+                      </span>
+                      <span>180 eval</span>
+                    </div>                  
+                  </div>                  
+                </div>
+                <div class="row">
+                                    <div class="col l6">
+                    <div class="row row-position">
+                      <i class="heart-search material-icons">&#xE87E;</i>
+                      <img src="img/original.jpg" alt="" class="responsive-img">
+                      <a href="#">
+                        <div class="price-bg">
+                          <sup>S/.</sup>
+                          <span>140</span>   
+                        </div>
+                      </a>
+                      <img src="img/imagen-circular.jpg" alt="" class="circle-search circle responsive-img">
+                    </div>
+                    <div class="row">
+                      <span>Double room in lge Victorian house</span>
+                    </div>  
+                    <div class="row color-gris font-size-14px">
+                      <span>Habitación privada</span>
+                      <span>1 huésped</span>
+                      <span>
+                        <div class="cnt-general-starts">
+                          <div class="cnt-starts">
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE839;</i>
+                            <i class="xtra-small material-icons">&#xE83A;</i>
+                          </div>
+                        </div>
+                      </span>
+                      <span>180 eval</span>
+                    </div>                  
+                  </div>
+                                    <div class="col l6">
+                    <div class="row row-position">
+                      <i class="heart-search material-icons">&#xE87E;</i>
+                      <img src="img/original.jpg" alt="" class="responsive-img">
+                      <a href="#">
+                        <div class="price-bg">
+                          <sup>S/.</sup>
+                          <span>140</span>   
+                        </div>
+                      </a>
+                      <img src="img/imagen-circular.jpg" alt="" class="circle-search circle responsive-img">
+                    </div>
+                    <div class="row">
+                      <span>Double room in lge Victorian house</span>
+                    </div>  
+                    <div class="row color-gris font-size-14px">
+                      <span>Habitación privada</span>
+                      <span>1 huésped</span>
+                      <span>
+                        <div class="cnt-general-starts">
+                          <div class="cnt-starts">
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE839;</i>
+                            <i class="xtra-small material-icons">&#xE83A;</i>
+                          </div>
+                        </div>
+                      </span>
+                      <span>180 eval</span>
+                    </div>                  
+                  </div>                 
+                </div>
+                <div class="row">
+                                    <div class="col l6">
+                    <div class="row row-position">
+                      <i class="heart-search material-icons">&#xE87E;</i>
+                      <img src="img/original.jpg" alt="" class="responsive-img">
+                      <a href="#">
+                        <div class="price-bg">
+                          <sup>S/.</sup>
+                          <span>140</span>   
+                        </div>
+                      </a>
+                      <img src="img/imagen-circular.jpg" alt="" class="circle-search circle responsive-img">
+                    </div>
+                    <div class="row">
+                      <span>Double room in lge Victorian house</span>
+                    </div>  
+                    <div class="row color-gris font-size-14px">
+                      <span>Habitación privada</span>
+                      <span>1 huésped</span>
+                      <span>
+                        <div class="cnt-general-starts">
+                          <div class="cnt-starts">
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE839;</i>
+                            <i class="xtra-small material-icons">&#xE83A;</i>
+                          </div>
+                        </div>
+                      </span>
+                      <span>180 eval</span>
+                    </div>                  
+                  </div>
+                                    <div class="col l6">
+                    <div class="row row-position">
+                      <i class="heart-search material-icons">&#xE87E;</i>
+                      <img src="img/original.jpg" alt="" class="responsive-img">
+                      <a href="#">
+                        <div class="price-bg">
+                          <sup>S/.</sup>
+                          <span>140</span>   
+                        </div>
+                      </a>
+                      <img src="img/imagen-circular.jpg" alt="" class="circle-search circle responsive-img">
+                    </div>
+                    <div class="row">
+                      <span>Double room in lge Victorian house</span>
+                    </div>  
+                    <div class="row color-gris font-size-14px">
+                      <span>Habitación privada</span>
+                      <span>1 huésped</span>
+                      <span>
+                        <div class="cnt-general-starts">
+                          <div class="cnt-starts">
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE839;</i>
+                            <i class="xtra-small material-icons">&#xE83A;</i>
+                          </div>
+                        </div>
+                      </span>
+                      <span>180 eval</span>
+                    </div>                  
+                  </div>                  
+                </div>
+                <div class="row">
+                                    <div class="col l6">
+                    <div class="row row-position">
+                      <i class="heart-search material-icons">&#xE87E;</i>
+                      <img src="img/original.jpg" alt="" class="responsive-img">
+                      <a href="#">
+                        <div class="price-bg">
+                          <sup>S/.</sup>
+                          <span>140</span>   
+                        </div>
+                      </a>
+                      <img src="img/imagen-circular.jpg" alt="" class="circle-search circle responsive-img">
+                    </div>
+                    <div class="row">
+                      <span>Double room in lge Victorian house</span>
+                    </div>  
+                    <div class="row color-gris font-size-14px">
+                      <span>Habitación privada</span>
+                      <span>1 huésped</span>
+                      <span>
+                        <div class="cnt-general-starts">
+                          <div class="cnt-starts">
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE839;</i>
+                            <i class="xtra-small material-icons">&#xE83A;</i>
+                          </div>
+                        </div>
+                      </span>
+                      <span>180 eval</span>
+                    </div>                  
+                  </div>
+                                    <div class="col l6">
+                    <div class="row row-position">
+                      <i class="heart-search material-icons">&#xE87E;</i>
+                      <img src="img/original.jpg" alt="" class="responsive-img">
+                      <a href="#">
+                        <div class="price-bg">
+                          <sup>S/.</sup>
+                          <span>140</span>   
+                        </div>
+                      </a>
+                      <img src="img/imagen-circular.jpg" alt="" class="circle-search circle responsive-img">
+                    </div>
+                    <div class="row">
+                      <span>Double room in lge Victorian house</span>
+                    </div>  
+                    <div class="row color-gris font-size-14px">
+                      <span>Habitación privada</span>
+                      <span>1 huésped</span>
+                      <span>
+                        <div class="cnt-general-starts">
+                          <div class="cnt-starts">
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE839;</i>
+                            <i class="xtra-small material-icons">&#xE83A;</i>
+                          </div>
+                        </div>
+                      </span>
+                      <span>180 eval</span>
+                    </div>                  
+                  </div>                  
+                </div>
+                <div class="row">
+                                    <div class="col l6">
+                    <div class="row row-position">
+                      <i class="heart-search material-icons">&#xE87E;</i>
+                      <img src="img/original.jpg" alt="" class="responsive-img">
+                      <a href="#">
+                        <div class="price-bg">
+                          <sup>S/.</sup>
+                          <span>140</span>   
+                        </div>
+                      </a>
+                      <img src="img/imagen-circular.jpg" alt="" class="circle-search circle responsive-img">
+                    </div>
+                    <div class="row">
+                      <span>Double room in lge Victorian house</span>
+                    </div>  
+                    <div class="row color-gris font-size-14px">
+                      <span>Habitación privada</span>
+                      <span>1 huésped</span>
+                      <span>
+                        <div class="cnt-general-starts">
+                          <div class="cnt-starts">
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE839;</i>
+                            <i class="xtra-small material-icons">&#xE83A;</i>
+                          </div>
+                        </div>
+                      </span>
+                      <span>180 eval</span>
+                    </div>                  
+                  </div>
+                                    <div class="col l6">
+                    <div class="row row-position">
+                      <i class="heart-search material-icons">&#xE87E;</i>
+                      <img src="img/original.jpg" alt="" class="responsive-img">
+                      <a href="#">
+                        <div class="price-bg">
+                          <sup>S/.</sup>
+                          <span>140</span>   
+                        </div>
+                      </a>
+                      <img src="img/imagen-circular.jpg" alt="" class="circle-search circle responsive-img">
+                    </div>
+                    <div class="row">
+                      <span>Double room in lge Victorian house</span>
+                    </div>  
+                    <div class="row color-gris font-size-14px">
+                      <span>Habitación privada</span>
+                      <span>1 huésped</span>
+                      <span>
+                        <div class="cnt-general-starts">
+                          <div class="cnt-starts">
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE838;</i>
+                            <i class="xtra-small color-green material-icons">&#xE839;</i>
+                            <i class="xtra-small material-icons">&#xE83A;</i>
+                          </div>
+                        </div>
+                      </span>
+                      <span>180 eval</span>
+                    </div>                  
+                  </div>                  
+                </div>
+              </div>
+            </div>
+            <footer class="row">
+              <div class="col l12">
+                <div class="row">
+                  <p> <span> 1 </span> - <span> 18 </span> de Más de <span>300</span> alquileres</p>
+                </div>
+                <div class="row">
+                  	<div class="col l12">
+                      <ul class="pagination">
+                        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                        <li class="active"><a href="#!">1</a></li>
+                        <li class="waves-effect"><a href="#!">2</a></li>
+                        <li class="waves-effect"><a href="#!">3</a></li>
+                        <li class="waves-effect"><a href="#!">4</a></li>
+                        <li class="waves-effect"><a href="#!">5</a></li>
+                        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                      </ul>
+                </div>
+              </div>
+            </footer>
+        </div>
+        </div>
+    </div>
+    <div  id="map" class="size-section col l5">
+    </div>
+  </section>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm1mRm4f953yxwDpuaF5oYcKAMsMRGwCE&callback=initMap" async defer></script>
+    <script src="js/vendor/nouislider.min.js"></script>
+  	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script> 
+    <script type="text/javascript" src="js/vendor/materialize.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
