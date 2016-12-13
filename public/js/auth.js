@@ -13,7 +13,7 @@ var txtEmail = document.getElementById("email");
         
        promise
           .then(function(e){
-            window.location.href = "https://www.google.com.pe/";
+             window.location.href = "/auth.html";
           })
           .catch(function(e){
             console.log(e.message); 

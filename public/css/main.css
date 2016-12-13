@@ -7,13 +7,20 @@ header nav {
   background-color: white;
   box-shadow: none;
   padding-bottom: 2em; }
-  header nav img {
+  header nav .logo {
     padding: 2vh;
     width: 7.5vh;
     height: 7.5vh; }
 header .nav-wrapper a {
   color: #484848;
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: 500; }
+header .nav-wrapper .auth {
+  margin: 1.2em;
+  border-radius: 50%;
+  width: 4vh;
+  height: 4vh;
+  color: 3px #484848 solid; }
 header .title .header-title {
   color: #484848;
   font-weight: 900;
@@ -29,7 +36,7 @@ header .hero {
   background-size: 1596px auto;
   background-repeat: repeat-x;
   left: -60px;
-  height: 85vh; }
+  height: 90vh; }
 header .header-text {
   margin-bottom: 1.5em; }
 header .button-header {
@@ -47,6 +54,12 @@ header #login {
   background-color: #FF7E82;
   width: 80%;
   color: white; }
+header .modal-content input {
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+  width: 97%;
+  padding: 0.5em 0.3em;
+  border: 1px #E9EBEB solid; }
 
 @media (max-width: 468px) {
   header .title .header-title {
@@ -56,7 +69,7 @@ header #login {
   header h3 {
     font-size: 1.7em; }
   header .hero {
-    height: 79vh;
+    height: 100vh;
     background-size: cover; }
   header .modal {
     width: 70vw; } }

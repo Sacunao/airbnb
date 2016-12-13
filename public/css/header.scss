@@ -10,7 +10,7 @@ header{
 	background-color: white;
 	box-shadow: none;
     padding-bottom: 2em;
-		img{
+		.logo{
 			padding: 2vh;
 		    width: 7.5vh;
 		    height: 7.5vh;
@@ -22,7 +22,15 @@ header{
 		a{
 			color: $color-gray-dark-title;
             cursor: pointer;
+            font-weight: 500;
 		}
+        .auth{
+            margin: 1.2em;
+            border-radius: 50%;
+		    width: 4vh;
+		    height: 4vh;
+            color:3px $color-gray-dark-title solid;
+        }
     }
 
 	.title{
@@ -49,7 +57,7 @@ header{
 	    background-size: 1596px auto;
 	    background-repeat: repeat-x;
 	    left: -60px;
-	    height: 85vh;
+	    height: 90vh;
 
 	}
 
@@ -77,6 +85,14 @@ header{
         width: 80%;
         color: white;
     }
+    
+    .modal-content input{
+        margin: 0 auto;
+        margin-bottom: 0.5em;
+        width: 97%;
+        padding: 0.5em 0.3em;
+        border: 1px $color-border solid;
+    }
 
 }
 
@@ -94,7 +110,7 @@ header{
         }
         
         .hero{
-            height: 79vh;
+            height: 100vh;
             background-size: cover;
         }
         
