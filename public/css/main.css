@@ -4,19 +4,18 @@
 .slider {
   width: 80%;
   margin: 100px auto; }
-
-.slick-slide {
-  margin: 0px 10px; }
-
-.slick-slide img {
-  width: 100%; }
-
-.slick-prev:before,
-.slick-next:before {
-  color: black; }
-
-#precio {
-  text-align: left !important;
-  color: black; }
+  .slider .slick-slide {
+    margin: 0px 10px; }
+  .slider .slick-slide img {
+    width: 100%; }
+  .slider .slick-prev:before,
+  .slider .slick-next:before {
+    color: black; }
+  .slider #precio {
+    text-align: left !important;
+    color: black; }
+  .slider .link {
+    color: black !important;
+    text-align: left !important; }
 
 /*# sourceMappingURL=main.css.map */

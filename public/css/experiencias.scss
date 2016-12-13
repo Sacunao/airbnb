@@ -7,21 +7,27 @@
     .slider {
         width: 80%;
         margin: 100px auto;
+
+        .slick-slide {
+          margin: 0px 10px;
+        }
+        
+        .slick-slide img {
+          width: 100%;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+        #precio {
+            text-align: left !important;
+            color:$bg-gray-darken;
+        }
+        .link{
+            color:$bg-gray-darken !important;
+            text-align: left !important;
+        }
     }
 
-    .slick-slide {
-      margin: 0px 10px;
-    }
-
-    .slick-slide img {
-      width: 100%;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-        color: black;
-    }
-    #precio {
-        text-align: left !important;
-        color:$bg-gray-darken;
-    }
+    
