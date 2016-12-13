@@ -6,6 +6,10 @@
 
  body{
 	font-family: $font-roboto;
+
+  .container {
+    width: 77%;
+  }
 }
 
 header{
@@ -178,7 +182,7 @@ header{
 
 .slider {
     width: 80%;
-    margin: 100px auto;
+    margin: 2rem auto;
 
      .slick-slide {
       margin: 0px 10px;
@@ -197,6 +201,27 @@ header{
         color:$color-gray-dark-title;
         font-size:0.9em;
     }
+}
+
+.xtra-small{
+    font-size: 1.3em;
+}
+
+.color-green{
+    color: #008489;
+}
+.color-gris{
+    color: #767676;
+}
+.cnt-general-starts{
+    display: inline-block;
+    float: left;
+    overflow: auto;    
+}
+.cnt-starts span{
+    position: absolute;
+    top: 90%;
+    left: 39.5%;    
 }
 
 footer{

@@ -5,6 +5,8 @@
 
 body {
   font-family: "Roboto", sans-serif; }
+  body .container {
+    width: 77%; }
 
 header nav {
   background-color: white;
@@ -125,7 +127,7 @@ header .modal-content input {
 /*Experiencia*/
 .slider {
   width: 80%;
-  margin: 100px auto; }
+  margin: 2rem auto; }
   .slider .slick-slide {
     margin: 0px 10px; }
   .slider .slick-slide img {
@@ -137,6 +139,25 @@ header .modal-content input {
     text-align: left !important;
     color: #484848;
     font-size: 0.9em; }
+
+.xtra-small {
+  font-size: 1.3em; }
+
+.color-green {
+  color: #008489; }
+
+.color-gris {
+  color: #767676; }
+
+.cnt-general-starts {
+  display: inline-block;
+  float: left;
+  overflow: auto; }
+
+.cnt-starts span {
+  position: absolute;
+  top: 90%;
+  left: 39.5%; }
 
 footer {
   font-size: 14px; }
