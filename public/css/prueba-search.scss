@@ -60,13 +60,20 @@ i.small {
   border-radius: 2px;
   background-color: #F2F2F2;
 }
-.myCheckbox{
-  margin-right: 0px;
-  display: inline-block;
+.lbl-border{
+  border:1px solid #AAAAAA !important;
+  height: 2.8rem;
+  border-radius: 2px;
+  background-color: #F2F2F2;
 }
+.lbl-border2{
+  border:1px solid #AAAAAA ;
+  height: 3.5rem;
+  border-radius: 2px;
+  background-color: #F2F2F2;}
 .text{
   display: inline-block;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-size: bold;
 }
 .text-alquileres{
@@ -160,15 +167,15 @@ i.small {
     left: 0;
     right: 36rem;
 }
+[type="checkbox"].filled-in:not(:checked) + label:after {
+    background-color: transparent;
+    border: 1px solid #AAAAAA ;
+    top: 0px;
+    z-index: 0;}
+.material-icons {
+  font-size: 21px;
+}
 @media screen and ( min-width: 768px ) {
   /* half-width cells for larger devices */
   .gallery-cell { width: 50%; }
 }
-
-.ocultar{
-  display: none;
-}
-/*
-#content-servicios{
-  margin-bottom: 0px;
-}*/
