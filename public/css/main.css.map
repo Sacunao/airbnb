@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEC,CAAE;EACG,UAAU,EAAE,UAAU;;AAGxB,OAAQ;EACJ,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,UAAU;;AAGtB,YAAa;EACX,MAAM,EAAE,QAAQ;;AAGlB,gBAAiB;EACf,KAAK,EAAE,IAAI;;AAGb;kBACmB;EACf,KAAK,EAAE,KAAK;;AAEhB,OAAQ;EACJ,UAAU,EAAE,eAAe;EAC3B,KAAK,ECrBG,KAAkC",
+"sources": ["experiencias.scss","_variables.scss"],
+"names": [],
+"file": "main.css"
+}
