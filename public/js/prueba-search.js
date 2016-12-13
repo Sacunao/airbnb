@@ -5,12 +5,3 @@ function initMap() {
     zoom: 8
   });
 }
-
-$(document).ready(function() {
-  $("#btn-filtro").click(ocultar);
-});
-
-function ocultar(evento){
-  $("#descripcion-filtros").addClass("ocultar");
-  $("#content-servicios").removeClass("ocultar");
-}
