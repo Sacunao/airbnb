@@ -3,4 +3,12 @@ footer .browser-default {
   font-weight: bold;
   border: 1px solid #dbdbdb; }
 
+@media (max-width: 480px) {
+  footer .browser-default {
+    margin-left: 15px;
+    margin-top: 3px; }
+  footer .s12 {
+    margin-top: 9px;
+    margin-right: 0; } }
+
 /*# sourceMappingURL=main.css.map */

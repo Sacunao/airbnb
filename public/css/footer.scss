@@ -9,3 +9,20 @@ footer{
   }
   
 }
+
+@media(max-width: 480px) {
+
+    footer{
+
+      .browser-default{
+        margin-left: 15px;
+        margin-top: 3px;
+      }
+
+      .s12{
+        margin-top: 9px;
+        margin-right: 0;
+      }
+
+    }
+}
