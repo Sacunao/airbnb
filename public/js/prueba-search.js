@@ -5,3 +5,7 @@ function initMap() {
     zoom: 8
   });
 }
+
+$(document).ready(function() {
+
+});
