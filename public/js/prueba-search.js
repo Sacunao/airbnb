@@ -24,12 +24,31 @@ var cargaExitosa = function(posicion) {
     
     var mostrarMap = new google.maps.Map(document.getElementById('map'), myOptions);
 
+        var contentString = '<img src="img/33.jpg" width="300px">'+
+        '<i class="heart-search material-icons"></i>' +
+        '<a href="" target="_blank">'+
+        '<p class="black-text"><strong class="blue-text">New:</strong>Room in New, quiet and brig</p></a>'+
+        '<p>Habitación privada</p>'+
+        '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+        content: contentString,
+        maxWidth: 300
+
+    });
+
+        
+
     var iconBase = "img/";
     var marker = new google.maps.Marker({
     position: latlon,
     map: mostrarMap,
-    icon: iconBase + 'user.png'
+    icon: iconBase + 'price.png'
   });
+
+        google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+    });
   
 };
 
@@ -56,7 +75,7 @@ var geocodeResult= function(results, status) {
 
  
         var iconBase1 = "img/";
-        var markerOptions = { position: results[0].geometry.location, icon: iconBase1 + 'circulo.png' }
+        var markerOptions = { position: results[0].geometry.location, icon: iconBase1 + 'price.png' }
         var marker = new google.maps.Marker(markerOptions);
         marker.setMap(map);
 
@@ -77,10 +96,7 @@ var geocodeResult= function(results, status) {
        $.each(array, function (index, value) {
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng(value.latitud, value.longitud),
-            map: map,
-            clickable: false,
-            content: 'Map Marker',
-            markerOffset: new google.maps.Point(0,4)
+            map:map
         });
 
         console.log("paso" + index);
@@ -92,7 +108,8 @@ var geocodeResult= function(results, status) {
        var array = CargarListaHabitacion();
        var mapOptions = {
             zoom: 14,
-            center:  new google.maps.LatLng(firstPosition.lat(), firstPosition.lng())
+            center:  new google.maps.LatLng(firstPosition.lat(), firstPosition.lng()),
+
        };
        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
         
@@ -102,8 +119,7 @@ var geocodeResult= function(results, status) {
             position: new google.maps.LatLng(value.latitud, value.longitud),
             map: map,
             clickable: false,
-            content: 'Map Marker',
-            markerOffset: new google.maps.Point(0,4)
+            content: 'Map Marker'
         });
 
         console.log("paso" + index);
@@ -125,8 +141,7 @@ var geocodeResult= function(results, status) {
             position: new google.maps.LatLng(value.latitud, value.longitud),
             map: map,
             clickable: false,
-            content: 'Map Marker',
-            markerOffset: new google.maps.Point(0,4)
+            content: 'Map Marker'
         });
 
         console.log("paso" + index);
