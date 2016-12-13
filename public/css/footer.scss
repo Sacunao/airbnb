@@ -15,6 +15,9 @@ footer{
     font-weight: bold;
   }
 
+  .grey-text:hover{
+    color:$color-cyan-hover !important;
+  }
 }
 
 @media(max-width: 480px) {
