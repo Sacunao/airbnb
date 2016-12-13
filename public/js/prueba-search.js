@@ -69,7 +69,7 @@ var geocodeResult= function(results, status) {
        var features = [];
        var array = CargarListaCasa();
        var mapOptions = {
-            zoom: 8,
+            zoom: 14,
             center:  new google.maps.LatLng(firstPosition.lat(), firstPosition.lng())
        };
        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
@@ -91,7 +91,7 @@ var geocodeResult= function(results, status) {
       var features = [];
        var array = CargarListaHabitacion();
        var mapOptions = {
-            zoom: 8,
+            zoom: 14,
             center:  new google.maps.LatLng(firstPosition.lat(), firstPosition.lng())
        };
        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
@@ -114,7 +114,7 @@ var geocodeResult= function(results, status) {
       var features = [];
        var array = CargarListaHbitacionCompartida();
        var mapOptions = {
-            zoom: 8,
+            zoom: 14,
             center:  new google.maps.LatLng(firstPosition.lat(), firstPosition.lng())
        };
        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
