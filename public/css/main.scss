@@ -126,13 +126,19 @@ header{
 }
 
 footer{
+   
+   font-size: 14px;
 
   .browser-default{
-    margin-top: 35px;
+    margin-top: 28px;
     font-weight: bold;
     border:1px solid $color-grey-select;
   }
-  
+
+  h5{
+    font-size: 16px;
+    font-weight: bold;
+  }
 }
 
 @media (max-width: 468px){
@@ -156,6 +162,19 @@ footer{
         .modal{
             width: 70vw;
         }
+
+    }
+    
+    footer{
+
+      .browser-default{
+        margin-left: 15px;
+        margin-top: 3px;
+      }
+
+      .s12{
+        margin-top: 9px;
+      }
 
     }
 }
