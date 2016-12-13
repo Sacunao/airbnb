@@ -1,14 +1,18 @@
-footer .browser-default {
-  margin-top: 35px;
-  font-weight: bold;
-  border: 1px solid #dbdbdb; }
+footer {
+  font-size: 14px; }
+  footer .browser-default {
+    margin-top: 35px;
+    font-weight: bold;
+    border: 1px solid #dbdbdb; }
+  footer h5 {
+    font-size: 16px;
+    font-weight: bold; }
 
 @media (max-width: 480px) {
   footer .browser-default {
     margin-left: 15px;
     margin-top: 3px; }
   footer .s12 {
-    margin-top: 9px;
-    margin-right: 0; } }
+    margin-top: 9px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,11 +1,18 @@
 @import "_variables";
 
 footer{
+   
+   font-size: 14px;
 
   .browser-default{
     margin-top: 35px;
     font-weight: bold;
     border:1px solid $color-grey-select;
+  }
+
+  h5{
+    font-size: 16px;
+    font-weight: bold;
   }
   
 }
@@ -21,7 +28,6 @@ footer{
 
       .s12{
         margin-top: 9px;
-        margin-right: 0;
       }
 
     }
