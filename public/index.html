@@ -55,8 +55,100 @@
 		  	</div>		  	
 		</div>
 	</header>
-	<h1></h1>
-
+	<!-- 		Barra de Búsqueda -->
+    <section id="form-search" class="formulario hide-on-small-only">
+			<div class="container">
+				<div class="row form">
+					<div class="col l4">
+						<div class="input-field">
+							<input id="pac-input" placeholder="Destino, ciudad, dirección" type="text" class="validate">
+							<label for="first_name">Dónde</label>
+						</div>
+					</div>
+					<div class="col l2">
+						<label for="first_name">Llegada</label>
+						<input type="date" class="datepicker">
+					</div>
+					<div class="col l2">
+						<label for="first_name">Salida</label>
+						<input type="date" class="datepicker">
+					</div>
+					<div class="col l2">
+						<label for="first_name">Huéspedes</label>
+						<select class="browser-default">
+							<option value="1">1 huésped</option>
+							<option value="2">2 huéspedes</option>
+							<option value="3">3 huéspedes</option>
+							<option value="4">4 huéspedes</option>
+						</select>
+					</div>
+					<div class="col l2">
+						<div class="file-field input-field">
+							<div class="btn">
+								<span>Buscar</span>
+							</div>					
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+<!-- 		Fin de Barra de Búsqueda -->
+<!-- Modal Trigger -->
+    <section id="nav-search" class="hide-on-large-only hide-on-med-only">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<a class="waves-effect waves-light btn" type="submit" data-toggle="modal" href="#modalResponsive">
+							<span>Buscar</span>
+							<i class="material-icons">search</i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+<!-- Modal Structure -->
+    <div id="modalResponsive" class="modal modal-size">
+			<div class="modal-content">
+				<section class="formulario-modal">
+					<div class="container">
+						<div class="row form-modal">
+							<div class="modal-footer">
+								<a href="#!" id="btn-close" class=" modal-action modal-close waves-effect waves-green btn-flat">X</a>
+							</div>
+						</div>
+						<div class="row form-modal">
+							<div class="col s12">
+								<div class="input-field">
+									<input id="pac-input" placeholder="Destino, ciudad, dirección" type="text" class="validate">
+									<label for="first_name">Dónde</label>
+								</div>
+							</div>
+							<div class="col s6">
+								<label for="first_name">Llegada</label>
+								<input type="date" class="datepicker">
+							</div>
+							<div class="col s6">
+								<label for="first_name">Salida</label>
+								<input type="date" class="datepicker">
+							</div>
+							<div class="col s12">
+								<label for="first_name">Huéspedes</label>
+								<select class="browser-default">
+									<option value="1">1 huésped</option>
+									<option value="2">2 huéspedes</option>
+									<option value="3">3 huéspedes</option>
+									<option value="4">4 huéspedes</option>
+								</select>
+							</div>
+							<div class="col s12 btn">
+								<span>Buscar</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+    <div>Experiencias</div>
 	<section class="container center slider lazy">
 		<div>
 	      <img data-lazy="img/chica.jpg">
