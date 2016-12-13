@@ -1,5 +1,7 @@
 /*colores*/
 /*Fuentes*/
+/*colores*/
+/*Fuentes*/
 body {
   font-family: "Roboto", sans-serif; }
 
@@ -60,6 +62,11 @@ header .modal-content input {
   width: 97%;
   padding: 0.5em 0.3em;
   border: 1px #E9EBEB solid; }
+
+footer .browser-default {
+  margin-top: 35px;
+  font-weight: bold;
+  border: 1px solid #dbdbdb; }
 
 @media (max-width: 468px) {
   header .title .header-title {
