@@ -69,7 +69,7 @@ var geocodeResult= function(results, status) {
        var features = [];
        var array = CargarListaCasa();
        var mapOptions = {
-            zoom: 8,
+            zoom: 14,
             center:  new google.maps.LatLng(firstPosition.lat(), firstPosition.lng())
        };
        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
@@ -91,7 +91,7 @@ var geocodeResult= function(results, status) {
       var features = [];
        var array = CargarListaHabitacion();
        var mapOptions = {
-            zoom: 8,
+            zoom: 14,
             center:  new google.maps.LatLng(firstPosition.lat(), firstPosition.lng())
        };
        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
@@ -114,7 +114,7 @@ var geocodeResult= function(results, status) {
       var features = [];
        var array = CargarListaHbitacionCompartida();
        var mapOptions = {
-            zoom: 8,
+            zoom: 14,
             center:  new google.maps.LatLng(firstPosition.lat(), firstPosition.lng())
        };
        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
@@ -149,6 +149,9 @@ function CargarListaCasa() {
         horarioAtencion: "24 horas",
         nombreContacto: "Ángel Rodríguez",
         ubicacion: "Miraflores",
+        habitaciones:5
+        baño:3
+        camas:2
         latitud: -12.120948,
         longitud: -77.034825
     };
@@ -159,6 +162,9 @@ function CargarListaCasa() {
         horarioAtencion: "24 horas",
         nombreContacto: "Raúl Borja",
         ubicacion: "Miraflores",
+        habitaciones:6,
+        baño:5,
+        camas:10,
         latitud: 12.121213,
         longitud: -77.038810
     };
@@ -169,6 +175,9 @@ function CargarListaCasa() {
         horarioAtencion: "9am a 7pm",
         nombreContacto: "Merly Luna",
         ubicacion: "Miraflores",
+        habitaciones:7,
+        baño:7,
+        camas:12,
         latitud: -12.117908,
         longitud: -77.038360
     };/////////////////////////////////////////hi
@@ -179,6 +188,9 @@ function CargarListaCasa() {
         horarioAtencion: "9am a 6pm",
         nombreContacto: "Leila Quispe",
         ubicacion: "Miraflores",
+        habitaciones:4,
+        baño:6,
+        camas:12,
         latitud: -12.117917,
         longitud: -77.037708
     };
@@ -189,6 +201,9 @@ function CargarListaCasa() {
         horarioAtencion: "9am a 6pm",
         nombreContacto: "Julio Sánchez",
         ubicacion: "San Luis",
+        habitaciones:3,
+        baño:8,
+        camas:4,
         latitud: -12.117529,
         longitud: -77.031421
     };
@@ -199,6 +214,9 @@ function CargarListaCasa() {
         horarioAtencion: "9am a 6pm",
         nombreContacto: "Julio Sánchez",
         ubicacion: "San Luis",
+        habitaciones:8,
+        baño:4,
+        camas:2,
         latitud: -12.117529,
         longitud: -77.031421
     };
@@ -210,6 +228,9 @@ function CargarListaCasa() {
         horarioAtencion: "9am a 8pm",
         nombreContacto: "Janeth Quispe",
         ubicacion: "Miraflores",
+        habitaciones:1,
+        baño:2,
+        camas:1,
         latitud: -12.1670502,
         longitud: -77.02489159999999
     };
@@ -221,6 +242,9 @@ function CargarListaCasa() {
         horarioAtencion: "9am a 8pm",
         nombreContacto: "Lilina Campos",
         ubicacion: "Miraflores",
+        habitaciones:6,
+        baño:5,
+        camas:4,
         latitud: -12.119557878342858,
         longitud:-77.02924489974976
     };
@@ -232,6 +256,9 @@ function CargarListaCasa() {
         horarioAtencion: "9am a 8pm",
         nombreContacto: "Lilina Campos",
         ubicacion: "Miraflores",
+        habitaciones:5,
+        baño:2,
+        camas:9,
         latitud: -12.113767496841845,
         longitud:-77.0382571220398
     };
@@ -242,6 +269,9 @@ function CargarListaCasa() {
         horarioAtencion: "9am a 8pm",
         nombreContacto: "Sheyla ",
         ubicacion: "Miraflores",
+        habitaciones:7,
+        baño:4,
+        camas:5,
         latitud: -12.113557698052471,
         longitud:-77.03920125961304
     };
@@ -252,6 +282,9 @@ function CargarListaCasa() {
         horarioAtencion: "9am a 8pm",
         nombreContacto: "Sheyla ",
         ubicacion: "Miraflores",
+        habitaciones:3,
+        baño:3,
+        camas:2
         latitud: -12.112886340818465,
         longitud:-77.041175365448
     };
@@ -277,6 +310,9 @@ function CargarListaHabitacion() {
         nombreHabitacion: "Torres de Grau",
         direccion: "Av.Grau 365",
         contacto: "Ing. Víctor Ruiz",
+        habitaciones:4,
+        baño:3,
+        camas:8,
         latitud: -12.121896,
         longitud: -77.034776
     };
@@ -284,6 +320,9 @@ function CargarListaHabitacion() {
         nombreProyecto: "Torres Pardo",
         direccion: "Calle Francia 715 Miraflores",
         contacto: "Jaime Salcedo",
+        habitaciones:7,
+        baño:6,
+        camas:16,
         latitud: -12.122274,
         longitud: -77.038172
     };
@@ -292,6 +331,9 @@ function CargarListaHabitacion() {
         direccion: "Jorge Chavez 509",
         conVista: "Al Mar",
         contacto: "Víctoria Ruiz",
+        habitaciones:5,
+        baño:3,
+        camas:3,
         latitud: -12.123451,
         longitud: -77.036878
     };
@@ -299,6 +341,9 @@ function CargarListaHabitacion() {
         nombreProyecto: "Condominios Miguel Grau",
         direccion: "Av. Grau 485 Miraflores",
         contacto: "Jaime Salcedo",
+        habitaciones:3,
+        baño:2,
+        camas:4,
         latitud: -12.123168,
         longitud: -77.034743
     };
@@ -306,6 +351,9 @@ function CargarListaHabitacion() {
         nombreProyecto: "Condominios Torres Arica",
         direccion: "Calle Arica 262",
         contacto: "Laura perez",
+        habitaciones:3,
+        baño:4,
+        camas:8,
         latitud: -12.117330,
         longitud: -77.035755
     };
@@ -314,6 +362,9 @@ function CargarListaHabitacion() {
         nombreHabitacion: "Safe and Beautiful private ",
         direccion: "Calle Almirante Lord Cochrane 554, Miraflores 15073, Perú",
         contacto: "Ing. Candy Soto",
+        habitaciones:6,
+        baño:3,
+        camas:7,
         latitud: -12.111375780869242,
         longitud: -77.042076587677
     };
@@ -322,6 +373,9 @@ function CargarListaHabitacion() {
         nombreHabitacion: "Los amigos del mundo ",
         direccion: "Av. Angamos Oeste 1475, Miraflores 15073, Perú",
         contacto: "Ing. Sandy Campos",
+        habitaciones:4,
+        baño:2,
+        camas:6,
         latitud: -12.111417740983228,
         longitud: -77.04276323318481
     };
@@ -343,6 +397,9 @@ function CargarListaHabitacion() {
         nombreHabitacion: "Tus amigos",
         direccion: "Av Mariscal La Mar 1168, Miraflores 15074, Perú",
         contacto: "Milagros Contreras",
+        habitaciones:5,
+        baño:5,
+        camas:5,
         latitud:-12.110599517571002,
         longitud:-77.04831004142761
     };
@@ -368,6 +425,9 @@ function CargarListaHbitacionCompartida() {
         nombreHabitacionCompartida: "Torres de Berlín",
         direccion: "Calle Berlín 778",
         nombreContacto: "Jorge Luna",
+        habitaciones:3,
+        baño:3,
+        camas:3,
         latitud: -12.120047,
         longitud: -77.037901
     };
@@ -375,6 +435,9 @@ function CargarListaHbitacionCompartida() {
         nombreHabitacionCompartida: "Condominios La Independencia",
         direccion: "Calle Independencia 452",
         nombreContacto: "Víctor Saenz",
+        habitaciones:5,
+        baño:5,
+        camas:10,
         latitud: -12.115715,
         longitud: -77.032386
     };
@@ -382,6 +445,9 @@ function CargarListaHbitacionCompartida() {
         nombreHabitacionCompartida: "Condominios Los Ángeles",
         direccion: "Calle José Gálvez 350",
         nombreContacto: "Sandra Rojas",
+        habitaciones:4,
+        baño:2,
+        camas:6,
         latitud: -12.121736,
         longitud: -77.033105
     };
@@ -389,6 +455,9 @@ function CargarListaHbitacionCompartida() {
         nombreHabitacionCompartida: "Condominios Cerro Viejo",
         direccion: "Calle Gnrl. Borgoño 351",
         nombreContacto: "Sandra Rojas",
+        habitaciones:5,
+        baño:5,
+        camas:5,
         latitud: -12.116197,
         longitud: -77.033609
     };
@@ -396,6 +465,9 @@ function CargarListaHbitacionCompartida() {
         nombreHabitacionCompartida: "Torres de Nuevo Mundo",
         direccion: "Calle Elías Aguirre 365",
         nombreContacto: "Sandra Rojas",
+        habitaciones:3,
+        baño:3,
+        camas:3,
         latitud: -12.116564,
         longitud: -77.034854
     };
@@ -404,6 +476,9 @@ function CargarListaHbitacionCompartida() {
         nombreHabitacionCompartida: "los Temerarios",
         direccion: "Calle Gral Mendiburu 1096, Miraflores 15074, Perú",
         nombreContacto: "Carla Mendez",
+        habitaciones:6,
+        baño:6,
+        camas:6,
         latitud: -12.110977159457434,
         longitud: -77.04912543296814
     };
@@ -411,6 +486,9 @@ function CargarListaHbitacionCompartida() {
         nombreHabitacionCompartida: "los Angeles",
         direccion: "Av del Ejército 1156, Miraflores 15074, Perú",
         nombreContacto: "Carlos Llacua",
+        habitaciones:5,
+        baño:5,
+        camas:10,
         latitud: -12.111082059886664,
         longitud: -77.04996228218079
     };
@@ -418,6 +496,9 @@ function CargarListaHbitacionCompartida() {
         nombreHabitacionCompartida: "Las Tucanes",
         direccion: "Calle Piura 793, Miraflores 15074, Perú",
         nombreContacto: "Andres Andes",
+        habitaciones:3,
+        baño:3,
+        camas:6,
         latitud: -12.115907435074877,
         longitud: -77.0367980003357
     };
@@ -425,6 +506,9 @@ function CargarListaHbitacionCompartida() {
         nombreHabitacionCompartida: "Las Americas",
         direccion: "Calle 2 de Mayo 781, Miraflores 15074, Perú",
         nombreContacto: "Melissa Vila",
+        habitaciones:4,
+        baño:4,
+        camas:4,
         latitud: -12.117963438000212,
         longitud: -77.03696966171265
     };
@@ -432,6 +516,9 @@ function CargarListaHbitacionCompartida() {
         nombreHabitacionCompartida: "Los corazones",
         direccion: "Casa Club Pardo, Av. José Pardo, Distrito de Lima 15074, Perú",
         nombreContacto: "Carlos Llacua",
+        habitaciones:7,
+        baño:7,
+        camas:14,
         latitud: -12.119348084105267,
         longitud: -77.03821420669556
     };
