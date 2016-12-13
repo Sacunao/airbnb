@@ -1,7 +1,8 @@
 /*colores*/
 /*Fuentes*/
-/*colores*/
-/*Fuentes*/
+* {
+  box-sizing: border-box; }
+
 body {
   font-family: "Roboto", sans-serif; }
 
@@ -62,6 +63,22 @@ header .modal-content input {
   width: 97%;
   padding: 0.5em 0.3em;
   border: 1px #E9EBEB solid; }
+
+/*Experiencia*/
+.slider {
+  width: 80%;
+  margin: 100px auto; }
+  .slider .slick-slide {
+    margin: 0px 10px; }
+  .slider .slick-slide img {
+    width: 100%; }
+  .slider .slick-prev:before,
+  .slider .slick-next:before {
+    color: black; }
+  .slider .precio {
+    text-align: left !important;
+    color: #484848;
+    font-size: 0.9em; }
 
 footer .browser-default {
   margin-top: 35px;
