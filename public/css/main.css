@@ -176,6 +176,51 @@ header .modal-content input {
   font-weight: bold;
   text-transform: inherit; }
 
+.housing {
+  width: 80%;
+  margin: 2.5rem auto; }
+  .housing .slick-slide {
+    margin: 0px 10px; }
+  .housing .slick-slide img {
+    width: 100%; }
+  .housing .slick-prev:before,
+  .housing .slick-next:before {
+    color: black; }
+  .housing .precio {
+    text-align: left !important;
+    color: #484848;
+    font-size: 0.9em; }
+
+.countries {
+  width: 80%;
+  margin: 2.5rem auto; }
+  .countries .slick-slide {
+    margin: 0px 10px; }
+  .countries .slick-slide img {
+    width: 100%; }
+  .countries .slick-prev:before,
+  .countries .slick-next:before {
+    color: black; }
+  .countries .precio {
+    text-align: left !important;
+    color: #484848;
+    font-size: 0.9em; }
+
+.solidary {
+  width: 80%;
+  margin: 2.5rem auto; }
+  .solidary .slick-slide {
+    margin: 0px 10px; }
+  .solidary .slick-slide img {
+    width: 100%; }
+  .solidary .slick-prev:before,
+  .solidary .slick-next:before {
+    color: black; }
+  .solidary .precio {
+    text-align: left !important;
+    color: #484848;
+    font-size: 0.9em; }
+
 /*Footer*/
 footer {
   font-size: 14px; }
