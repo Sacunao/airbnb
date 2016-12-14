@@ -103,9 +103,7 @@ var geocodeResult= function(results, status) {
         var infowindow = new google.maps.InfoWindow({
         content: contentString1,
         maxWidth: 300
-        
-
-     });      
+        });      
     }else{
 
       alert("Geocoding no tuvo éxito debido a: " + status);
@@ -143,7 +141,7 @@ var geocodeResult= function(results, status) {
         content: contentString2,
         maxWidth: 300
         }); 
-         
+
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng(value.latitud, value.longitud),
             map:map
@@ -167,9 +165,8 @@ var geocodeResult= function(results, status) {
        };
        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
         
-       $.each(array, function (index, value) {
-
-        var contentString3 = '<img src="img/36.jpg" width="300px">'+
+       $.each(array, function (index, value) {  
+         var contentString3 = '<img src="img/33.jpg" width="300px">'+
         '<i class="heart-search material-icons"></i>' +
         '<a href="" target="_blank">'+
         '<p class="black-text">Flowery Inn Villa with garden</p></a>'+
@@ -182,13 +179,20 @@ var geocodeResult= function(results, status) {
         '<i class="xtra-small material-icons">&#xE83A;</i>'+
         '</div>'+
         '</div>';
-        
+
+        var infowindow = new google.maps.InfoWindow({
+        content: contentString3,
+        maxWidth: 300
+        });      
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng(value.latitud, value.longitud),
             map: map,
-            clickable: false,
-            content: 'Map Marker'
         });
+
+        google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map,marker);
+        });
+
 
         console.log("paso" + index);
 
@@ -203,14 +207,15 @@ var geocodeResult= function(results, status) {
        };
        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
         
-       $.each(array, function (index, value) {
-        
+       $.each(array, function (index, value) {      
         var marker = new google.maps.Marker({
+
             position: new google.maps.LatLng(value.latitud, value.longitud),
             map: map,
             clickable: false,
             content: 'Map Marker'
         });
+
 
         console.log("paso" + index);
 
