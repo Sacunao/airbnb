@@ -282,7 +282,6 @@ var geocodeResult= function(results, status) {
         '<i class="xtra-small material-icons">&#xE83A;</i>'+
         '</div>'+
         '</div>';
-
         var infowindow = new google.maps.InfoWindow({
         content: contentString4,
         maxWidth: 300
@@ -301,9 +300,140 @@ var geocodeResult= function(results, status) {
 
      });
             
-  
     });
+
+    $("#habitaciones").change(function(){
+       var features = [];
+       var array = CargarListaHbitacionCompartida();
+       var mapOptions = {
+            zoom: 14,
+            center:  new google.maps.LatLng(firstPosition.lat(), firstPosition.lng())
+       };
+       var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+       $("#aplicarFiltros").click(function(){
+           $.each(array, function (index, value) { 
+                 var contentString5 = '<img src="img/31.jpg" width="300px">'+
+                '<i class="heart-search material-icons"></i>' +
+                '<a href="" target="_blank">'+
+                '<p class="black-text">Flowery Inn Villa with garden</p></a>'+
+                '<div>Casa/apto'+
+                '<div class="cnt-general-starts">'+
+                '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+                '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+                '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+                '<i class="xtra-small color-green material-icons">&#xE839;</i>'+
+                '<i class="xtra-small material-icons">&#xE83A;</i>'+
+                '</div>'+
+                '</div>';
+                var infowindow = new google.maps.InfoWindow({
+                content: contentString5,
+                maxWidth: 300
+                });  
+
+                var iconBase5 = "img/";    
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(value.latitud, value.longitud),
+                    map: map,
+                    icon: iconBase5 + 'price.png'
+                });
+
+                google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map,marker);
+                }); 
+
+            });
+ 
+       });
        
+    }); 
+    $("#banos").change(function(){
+       var features = [];
+       var array = CargarListaCasa();
+       var mapOptions = {
+            zoom: 14,
+            center:  new google.maps.LatLng(firstPosition.lat(), firstPosition.lng())
+       };
+       var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+       $("#aplicarFiltros").click(function(){
+           $.each(array, function (index, value) { 
+                 var contentString6 = '<img src="img/32.jpg" width="300px">'+
+                '<i class="heart-search material-icons"></i>' +
+                '<a href="" target="_blank">'+
+                '<p class="black-text">Flowery Inn Villa with garden</p></a>'+
+                '<div>Casa/apto'+
+                '<div class="cnt-general-starts">'+
+                '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+                '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+                '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+                '<i class="xtra-small color-green material-icons">&#xE839;</i>'+
+                '<i class="xtra-small material-icons">&#xE83A;</i>'+
+                '</div>'+
+                '</div>';
+                var infowindow = new google.maps.InfoWindow({
+                content: contentString6,
+                maxWidth: 300
+                });  
+
+                var iconBase6 = "img/";    
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(value.latitud, value.longitud),
+                    map: map,
+                    icon: iconBase6 + 'price.png'
+                });
+
+                google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map,marker);
+                }); 
+
+            });
+ 
+       });
+       
+    }); 
+    $("#camas").change(function(){
+       var features = [];
+       var array = CargarListaHabitacion();
+       var mapOptions = {
+            zoom: 14,
+            center:  new google.maps.LatLng(firstPosition.lat(), firstPosition.lng())
+       };
+       var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+       $("#aplicarFiltros").click(function(){
+           $.each(array, function (index, value) { 
+                 var contentString7 = '<img src="img/34.jpg" width="300px">'+
+                '<i class="heart-search material-icons"></i>' +
+                '<a href="" target="_blank">'+
+                '<p class="black-text">Flowery Inn Villa with garden</p></a>'+
+                '<div>Casa/apto'+
+                '<div class="cnt-general-starts">'+
+                '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+                '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+                '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+                '<i class="xtra-small color-green material-icons">&#xE839;</i>'+
+                '<i class="xtra-small material-icons">&#xE83A;</i>'+
+                '</div>'+
+                '</div>';
+                var infowindow = new google.maps.InfoWindow({
+                content: contentString7,
+                maxWidth: 300
+                });  
+
+                var iconBase7 = "img/";    
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(value.latitud, value.longitud),
+                    map: map,
+                    icon: iconBase7 + 'price.png'
+                });
+
+                google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map,marker);
+                }); 
+
+            });
+ 
+       });
+       
+    });   
 }
 
 $(document).ready(load);
