@@ -43,6 +43,9 @@ i.small {
   /* width: 42vw; */
   left: 53rem; }
 
+body{
+    overflow-x: hidden;
+}
 /*tipo de habitacion*/
 .input-checkbox {
   border: 1px solid #AAAAAA;
@@ -160,13 +163,6 @@ i.small {
   left: 0;
   right: 36rem; }
 
-@media screen and (min-width: 768px) {
-  /* half-width cells for larger devices */
-  .gallery-cell {
-    width: 50%; } }
-.ocultar {
-  display: none; }
-
 /*# sourceMappingURL=prueba-search.css.map */
 .lbl-border{
   border:1px solid #AAAAAA ;
@@ -179,6 +175,7 @@ i.small {
   border-radius: 2px;
   background-color: #F2F2F2;
 word-wrap: break-word;}
+
 [type="checkbox"].filled-in:not(:checked) + label:after {
     height: 18px;
     width: 18px;
@@ -186,6 +183,7 @@ word-wrap: break-word;}
     border: 1px solid #AAAAAA ;
     top: -3px;
     z-index: 0;}
+    
 .material-icons {
   font-size: 21px;
   margin-top: 4%;
@@ -353,5 +351,30 @@ input[type=range] + .thumb {
 }
 .rayo{
     color: orange;
+}
+nav .input-field label.active i{
+    color: black !important;
+    font-size: 28px;
+}
+
+@media all and (max-width : 450px){
+#tipo-selecion{
+     display: none;
+}
+.txt-filtro{
+    display: none;
+}
+.logo{
+    left: 5px !important;
+ }
+
+.input-field input[type=search] + label{
+    position: absolute;
+    left: 20rem;
+    font-size: 20px;
+}
+
+.input-field input[type=search]{
+    padding-left: 0;
 }
 

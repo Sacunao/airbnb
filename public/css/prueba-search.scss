@@ -15,6 +15,12 @@ nav {
         color: #5E4848;
       }
     }
+    label.active {
+      i {
+        color: black !important;
+        font-size: 28px;
+      }
+    }
   }
 }
 .navbar-search {
@@ -57,6 +63,9 @@ i.small {
   height: 86vh;
   left: 53rem;
 }
+body {
+  overflow-x: hidden;
+}
 .input-checkbox {
   border: 1px solid #AAAAAA;
   border-radius: 2px;
@@ -80,8 +89,9 @@ i.small {
 #btn-filtro {
   background-color: transparent;
   color: black;
+  font-weight: bold;
   font-size: 0.8rem;
-  position: ;
+  border: 1px solid black;
 }
 #range-bg {
   background-image: url(../img/histograma.png);
@@ -175,9 +185,6 @@ i.small {
   bottom: 0;
   left: 0;
   right: 36rem;
-}
-.ocultar {
-  display: none;
 }
 .lbl-border {
   border: 1px solid #AAAAAA;
@@ -361,8 +368,26 @@ input[type=range] {
 .rayo {
   color: orange;
 }
-@media screen and (min-width: 768px) {
-  .gallery-cell {
-    width: 50%;
+@media all and (max-width : 450px) {
+  #tipo-selecion {
+    display: none;
+  }
+  .txt-filtro {
+    display: none;
+  }
+  .logo {
+    left: 5px !important;
+  }
+  .input-field {
+    input[type=search] {
+      + {
+        label {
+          position: absolute;
+          left: 20rem;
+          font-size: 20px;
+        }
+      }
+      padding-left: 0;
+    }
   }
 }
