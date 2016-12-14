@@ -1,4 +1,10 @@
-var express = require('express'),
-	app = express();
-var port = process.env.PORT || 8080;
-console.log('Your application is running on http://localhost:' + port);
+var express = require("express");
+var app = express();
+
+app.use(express.static(__dirname+ "/public"));
+app.listen(3000,function(){
+	console.log("server encendido");
+});
+
+
+
