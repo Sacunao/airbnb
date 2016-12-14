@@ -66,6 +66,52 @@ header .modal-content input {
   width: 97%;
   padding: 0.5em 0.3em;
   border: 1px #E9EBEB solid; }
+header .button-header {
+  border-radius: 50px;
+  border: #E9EBEB solid;
+  width: 20em;
+  padding: 0.5em 0.8em;
+  color: #717171;
+  font-weight: 500;
+  cursor: pointer; }
+header #register-facebook {
+  border: 1px solid #4568b2;
+  background-color: #4568b2;
+  width: 100%;
+  color: #fff;
+  padding: 1.4rem 1rem 3.4rem 1rem;
+  font-weight: normal;
+  text-transform: inherit; }
+header #register-google {
+  border: 1px solid #588cfb;
+  background-color: #ffffff;
+  width: 100%;
+  color: #000;
+  margin-top: 1.2rem;
+  padding: 1.4rem 1rem 3.4rem 1rem;
+  font-weight: normal;
+  text-transform: inherit; }
+header .signup-or-separator {
+  background: none;
+  height: 34px;
+  position: relative;
+  text-align: center; }
+header .signup-or-separator--text {
+  background-color: #fafafa;
+  display: inline-block;
+  padding: 8px; }
+header #form-sign-in {
+  position: relative; }
+  header #form-sign-in .icon-mail {
+    position: absolute;
+    bottom: 80%;
+    left: 89%;
+    color: #a2a2a2; }
+  header #form-sign-in .icon-lock {
+    position: absolute;
+    bottom: 40%;
+    left: 89%;
+    color: #a2a2a2; }
 
 /*Formulario*/
 .btn {
