@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+		<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Te espera un mundo de viajes inolvidables</title>
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/vendor/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" type="text/css" href="css/vendor/animate.css">
+	<link type="text/css" rel="stylesheet" href="css/main.css"/>
+	<link type="text/css" rel="stylesheet" href="css/vendor/style.css"  media="screen,projection"/>
+	<link rel="shortcut icon" type="img/png" href="img/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/vendor/slick.css">
+ 	<link rel="stylesheet" type="text/css" href="css/vendor/slick-theme.css">
+ 	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<div class="hero wow fadeIn">
+			<nav>
+			    <div class="nav-wrapper">
+			      <a href="#" class="brand-logo"><img class="logo" src="img/logo.png"></a>
+			      <ul id="nav-mobile" class="right hide-on-med-and-down">
+			        <li><a href="#">Conviértete en anfitrión</a></li>
+			        <li><a href="#">Viajes</a></li>
+			        <li><a href="#">Mensajes</a></li>
+			        <li><a href="#">Ayuda</a></li>
+			        <li><a href="#"><img class="auth" src="img/user.jpg" alt="user"></a></li>
+			      </ul>
+			    </div>
+		  	</nav>
+		  	<div class="container">
+		  		<div class="title left-align">
+			  		<h3 class="header-title"><b>Te espera un mundo de viajes inolvidables.</b></h3>
+			  		<p class="header-text hide-on-med-and-down">Alojamientos, experiencias y lugares, todo en una sola aplicación.</p>
+			  		<a class="button-header center hide-on-small-only"><span>Descubre las últimas novedades</span></a>
+			  		<div class="hide-on-med-and-up center">Descubre las últimas novedades</div>
+			  	</div>
+		  	</div>		  	
+		</div>
+	</header>
+	<!-- 		Barra de Búsqueda -->
+    <section id="form-search" class="formulario hide-on-small-only">
+			<div class="container">
+				<div class="row form">
+					<div class="col l4">
+						<div class="input-field">
+							<input id="pac-input" placeholder="Destino, ciudad, dirección" type="text" class="validate">
+							<label for="first_name">Dónde</label>
+						</div>
+					</div>
+					<div class="col l2">
+						<label for="first_name">Llegada</label>
+						<input type="date" class="datepicker">
+					</div>
+					<div class="col l2">
+						<label for="first_name">Salida</label>
+						<input type="date" class="datepicker">
+					</div>
+					<div class="col l2">
+						<label for="first_name">Huéspedes</label>
+						<select class="browser-default">
+							<option value="1">1 huésped</option>
+							<option value="2">2 huéspedes</option>
+							<option value="3">3 huéspedes</option>
+							<option value="4">4 huéspedes</option>
+						</select>
+					</div>
+					<div class="col l2">
+						<div class="file-field input-field">
+							<div id="btn-search" class="btn">
+								<span>Buscar</span>
+							</div>					
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+<!-- 		Fin de Barra de Búsqueda -->
+<!-- Modal Trigger -->
+    <section id="nav-search" class="hide-on-large-only hide-on-med-only">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<a class="waves-effect waves-light btn" type="submit" data-toggle="modal" href="#modalResponsive">
+							<span>Buscar</span>
+							<i class="material-icons">search</i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+<!-- Modal Structure -->
+    <div id="modalResponsive" class="modal modal-size">
+			<div class="modal-content">
+				<section class="formulario-modal">
+					<div class="container">
+						<div class="row form-modal">
+							<div class="modal-footer">
+								<a href="#!" id="btn-close" class=" modal-action modal-close waves-effect waves-green btn-flat">X</a>
+							</div>
+						</div>
+						<div class="row form-modal">
+							<div class="col s12">
+								<div class="input-field">
+									<input id="pac-input" placeholder="Destino, ciudad, dirección" type="text" class="validate">
+									<label for="first_name">Dónde</label>
+								</div>
+							</div>
+							<div class="col s6">
+								<label for="first_name">Llegada</label>
+								<input type="date" class="datepicker">
+							</div>
+							<div class="col s6">
+								<label for="first_name">Salida</label>
+								<input type="date" class="datepicker">
+							</div>
+							<div class="col s12">
+								<label for="first_name">Huéspedes</label>
+								<select class="browser-default">
+									<option value="1">1 huésped</option>
+									<option value="2">2 huéspedes</option>
+									<option value="3">3 huéspedes</option>
+									<option value="4">4 huéspedes</option>
+								</select>
+							</div>
+							<div class="col s12 btn">
+								<span>Buscar</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+<!--Sección Experiencias-->	
+		<div class="container">
+				<div class="row">
+					<h5>Experiencias</h5>
+				</div>
+		</div>
+		<section class="center slider lazy">
+			<div>
+				<img data-lazy="img/chica.jpg">
+				<a href=""> <p class="precio" ><b>S/.345</b> Concert & soul music experience</p></a>
+			</div>
+			<div>
+				<img data-lazy="img/laura.jpg">
+				<a  href=""> <p class="precio" ><b>S/.345</b> Concert & soul music experience</p></a>
+				<div class="row">
+					<div class="cnt-general-starts">
+						<div class="cnt-starts">
+							<i class="xtra-small color-green material-icons">&#xE838;</i>
+							<i class="xtra-small color-green material-icons">&#xE838;</i>
+							<i class="xtra-small color-green material-icons">&#xE838;</i>
+							<i class="xtra-small color-green material-icons">&#xE839;</i>
+							<i class="xtra-small material-icons">&#xE83A;</i>
+							<span>12 evaluaciones</span>				
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<img data-lazy="img/bailar.jpg">
+				<a  href=""> <p class="precio" ><b>S/.345</b> Concert & soul music experience</p></a>
+			</div>
+			<div>
+				<img data-lazy="img/pauline.jpg">
+				<a  href=""> <p class="precio"><b>S/.345</b> Concert & soul music experience</p></a>
+			</div>
+			<div>
+				<img data-lazy="img/senora.jpg">
+				<a  href=""> <p class="precio" ><b>S/.345</b> Concert & soul music experience</p></a>
+			</div>
+			<div>
+				<img data-lazy="img/muscache.jpg">
+				<a  href=""> <p class="precio"><b>S/.345</b> Concert & soul music experience</p></a>			
+			</div>
+		</section>			
+<!--Fin Sección Experiencias-->	
+<br>
+<br>
+
+<!---Sección Alojamientos-->
+		<div class="container">
+				<div class="row">
+					<h5>Alojamientos</h5>
+				</div>
+		</div>
+		<section class="container center housing alojamientos">
+			<div>
+				<img data-lazy="img/9.jpg">
+				<a href=""> <p class="precio" ><b>S/.446</b> Casa/apto. entero en Crozon</p></a>
+			</div>
+			<div>
+				<img data-lazy="img/10.jpg">
+				<a href=""> <p class="precio" ><b>S/.446</b> Casa/apto. entero en Crozon</p></a> 
+			</div>
+			<div>
+				<img data-lazy="img/12.jpg">
+				<a href=""> <p class="precio" ><b>S/.446</b> Casa/apto. entero en Crozon</p></a>
+			</div>
+			<div>
+				<img data-lazy="img/33.jpg">
+				<a href=""> <p class="precio"><b>S/.446</b> Casa/apto. entero en Crozon</p></a>
+			</div>
+			<div>
+				<img data-lazy="img/34.jpg">
+				<a href=""> <p class="precio" ><b>S/.446</b> Casa/apto. entero en Crozon</p></a>
+			</div>
+			</section>		
+
+<!--Fin Sección Alojamientos-->
+
+<!---Sección Destinos Destacados-->
+		<div class="container">
+				<div class="row">
+					<h5>Destinos Destacados</h5>
+				</div>
+		</div>
+		<section class="container center countries paises">
+			<div>
+				<img data-lazy="img/15.jpg">
+				<a href=""> <p class="precio"><b>Paris</b></p></a>
+			</div>
+			<div>
+				<img data-lazy="img/16.jpg">
+				<a href=""> <p class="precio" ><b>London</b></p></a> 
+			</div>
+			<div>
+				<img data-lazy="img/5.jpg">
+				<a href=""> <p class="precio" ><b>Tokio</b></p></a>
+			</div>
+			<div>
+				<img data-lazy="img/3.jpg">
+				<a href=""> <p class="precio"><b>Ciudad del Cabo</b></p></a>
+			</div>
+			<div>
+				<img data-lazy="img/6.jpg">
+				<a href=""> <p class="precio"><b>Miami</b></p></a>
+			</div>
+			<div>
+				<img data-lazy="img/2.jpg">
+				<a href=""> <p class="precio"><b>Seúl</b></p></a>
+			</div>
+			<div>
+				<img data-lazy="img/13.jpg">
+				<a href=""> <p class="precio"><b>Florencia</b></p></a>
+			</div>
+			<div>
+				<img data-lazy="img/4.jpg">
+				<a href=""> <p class="precio"><b>Los Ángeles</b></p></a>
+			</div>
+			<div>
+				<img data-lazy="img/1.jpg">
+				<a href=""> <p class="precio"><b>Nairobi</b></p></a>
+			</div>
+			<div>
+				<img data-lazy="img/11.jpg">
+				<a href=""> <p class="precio"><b>Detroit</b></p></a>
+			</div>
+			<div>
+				<img data-lazy="img/8.jpg">
+				<a href=""> <p class="precio"><b>San Francisco</b></p></a>
+			</div>
+		</section>		
+
+<!--Fin Sección Destinos Destacados-->
+
+<!---Sección Experiencias Solidarias-->
+		<div class="container">
+				<div class="row">
+					<h5>Experiencias Solidarias</h5>
+				</div>
+		</div>
+
+	<section class="container center solidary solidario">
+		<div>
+	      <img data-lazy="img/soli1.jpg">
+	      <a  href=""><p class="precio" ><b>S/.790</b> Nutcracker & ballet</p></a>
+	    </div>
+	    <div>
+	      <img data-lazy="img/soli2.jpg">
+	      <a  href=""> <p class="precio"><b>S/.790</b> Nutcracker & ballet</p></a> 
+	    </div>
+	    <div>
+	      <img data-lazy="img/soli3.jpg">
+	      <a  href=""> <p class="precio"><b>S/.790</b> Nutcracker & ballet</p></a>
+	    </div>
+	    <div>
+	      <img data-lazy="img/soli4.jpg">
+	      <a  href=""> <p class="precio"><b>S/.790</b> Nutcracker & ballet</p></a>
+	    </div>
+	    <div>
+	      <img data-lazy="img/soli5.jpg">
+	      <a  href=""> <p class="precio"><b>S/.790</b> Nutcracker & ballet</p></a>
+	    </div>
+	</section>		
+
+<!--Fin Sección Experiencias Solidarias-->
+
+<!--Sección Ser Anfitrión-->
+	<section id="be-host">
+			<div class="container">
+			  <div class="row">
+			    <div class="col s12 m6 l5">
+			    	<br><br>
+			    	<b>Ser anfitrión te abre el mundo lleno de oportunidades</b>
+			    	<p>Gana dinero compartiendo tu espacio libre con huéspedes.</p>
+					  <button class="btn waves-effect waves-light" style="background-color: #00A699;" type="submit" name="action">Cuánto puedes ganar</button>		    	
+			    </div>
+			    <div class="col s12 m6 l7">
+			    	<img src="img/45.jpg" alt="Conviertete en anfitrión">
+			    </div>
+			  </div>
+			</div>
+			<br><br>	
+	</section>
+<!--Fin Sección Ser Anfitrión-->
+
+<!---Sección Alojamientos en París-->
+		<div class="container">
+				<div class="row">
+					<h5>Alojamientos en París</h5>
+				</div>
+		</div>
+		<section class="container center housing alojamientos">
+			<div>
+				<img data-lazy="img/46.jpg">
+				<a href=""> <p class="precio" ><b>S/.277</b> Casa/apto. entero en Crozon</p></a>
+			</div>
+			<div>
+				<img data-lazy="img/47.jpg">
+				<a href=""> <p class="precio" ><b>S/.1018</b> Casa/apto. entero en Crozon</p></a> 
+			</div>
+			<div>
+				<img data-lazy="img/48.jpg">
+				<a href=""> <p class="precio" ><b>S/.298</b> Casa/apto. entero en Crozon</p></a>
+			</div>
+			<div>
+				<img data-lazy="img/52.jpg">
+				<a href=""> <p class="precio"><b>S/.316</b> Casa/apto. entero en Crozon</p></a>
+			</div>
+			<div>
+				<img data-lazy="img/53.jpg">
+				<a href=""> <p class="precio" ><b>S/.298</b> Casa/apto. entero en Crozon</p></a>
+			</div>
+			<div>
+				<img data-lazy="img/49.jpg">
+				<a href=""> <p class="precio" ><b>S/.779</b> Casa/apto. entero en Crozon</p></a>
+			</div>			
+			</section>		
+
+<!--Fin Sección Alojamientos en París-->
+<br>
+<br>
+
+<!--Footer-->
+ <footer><hr>
+    <div class="container">
+        <div class="row">
+		    <div class="col l3 m3">
+		        <select class="browser-default cyan-text text-darken-2">
+				    <option value="" selected>Español</option>
+					<option value="1">Bahasa Indonesia</option>
+					<option value="2">Bahasa Melayu</option>
+					<option value="3">Català</option>
+					<option value="4">Dansk</option>
+					<option value="5">Deutsch</option>
+					<option value="6">English</option>
+					<option value="7">Español</option>
+					<option value="8">Eλληνικά</option>
+					<option value="9">Français</option>
+					<option value="10">Italiano</option>
+					<option value="11">Magyar</option>
+					<option value="12">Nederlands</option>
+					<option value="13">Norsk</option>
+					<option value="14">Polski</option>
+					<option value="15">Português</option>
+					<option value="16">Suomi</option>
+					<option value="17">Svenska</option>
+					<option value="18">Türkçe</option>
+					<option value="19">Íslenska</option>
+					<option value="20">Čeština</option>
+					<option value="21">Русский</option>
+					<option value="22">ภาษาไทย</option>
+					<option value="23">中文 (简体)</option>
+ </div>					
+					<option value="24">中文 (繁體)</option>
+					<option value="25">日本語</option>
+                </select>
+                <select class="browser-default cyan-text text-darken-2">
+				    <option value="" selected>PEN</option>
+					<option value="1">AED</option>
+					<option value="2">ARS</option>
+					<option value="3">AUD</option>
+					<option value="4">BGN</option>
+					<option value="5">BRL</option>
+					<option value="6">CAD</option>
+					<option value="7">CHF</option>
+					<option value="8">CLP</option>
+					<option value="9">CNY</option>
+					<option value="10">COP</option>
+					<option value="11">CRC</option>
+					<option value="12">CZK</option>
+					<option value="13">DKK</option>
+					<option value="14">GBP</option>
+					<option value="15">HKD</option>
+					<option value="16">HRK</option>
+					<option value="17">HUF</option>
+					<option value="18">IDR</option>
+					<option value="19">ILS</option>
+					<option value="20">JPY</option>
+					<option value="21">KRW</option>
+					<option value="22">MAD</option>
+					<option value="23">MXN</option>
+					<option value="24">MYR</option>
+					<option value="25">NOK</option>
+					<option value="26">NZD</option>
+					<option value="27">PEN</option>
+					<option value="28">PHP</option>
+					<option value="29">PLN</option>
+					<option value="30">RUB</option>
+					<option value="31">SAR</option>
+					<option value="32">THB</option>
+                </select>
+		    </div>
+	        <div class="col l3 m3 hide-on-small-only">
+		        <h5 class=" grey-text text-darken-3">Airbnb</h5>
+		        <ul class="list">
+		           <li>
+		              <a class="grey-text text-darken-1" href="">Acerca de</a>
+		           </li>
+		           <li>
+		              <a class="grey-text text-darken-1" href="">Empleo</a>
+		           </li>
+		           <li>
+		              <a class="grey-text text-darken-1" href="">Prensa</a>
+		           </li>
+		           <li>
+		               <a class=" grey-text text-darken-1" href="">Políticas</a>
+		           </li>
+		           <li>
+		              <a class=" grey-text text-darken-1" href="">Ayuda</a>
+		           </li>
+		        </ul>
+	        </div>
+            <div class="col l3 m3 hide-on-small-only">
+                <h5 class=" grey-text text-darken-3">Descubre Airbnb</h5>
+                <ul class="list">
+                    <li>
+                       <a class=" grey-text text-darken-1" href="">Confianza y seguridad</a>
+                    </li>
+                    <li>
+                       <a class=" grey-text text-darken-1" href="">Crédito para viajar</a>
+                    </li>
+                    <li>
+                       <a class=" grey-text text-darken-1" href="">Cheques regalo</a>
+                    </li>
+                    <li>
+                       <a class=" grey-text text-darken-1" href="">Airbnb Action</a>
+                    </li>
+                    <li>
+                       <a class=" grey-text text-darken-1 " href="">Viajes de negocios</a>
+                    </li>
+                    <li>
+                       <a class=" grey-text text-darken-1"  href="">Guías</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l3 m3 hide-on-small-only">
+                <h5 class=" grey-text text-darken-3 ">Hospedar</h5>
+                <ul class="list">
+                    <li>
+                       <a class=" grey-text text-darken-1" href="">Razones para hospedar</a>
+                    </li>
+                    <li>
+                       <a class=" grey-text text-darken-1" href="">Hospitalidad</a>
+                    </li>
+                    <li>
+                       <a class=" grey-text text-darken-1" href="">Ser un anfitrión </a>
+                    </li>
+                    <li>
+                       <a class=" grey-text text-darken-1" href="">responsable</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+    <div class="container"><hr>
+        <div class="row">
+        	<div class="col m6 l6 grey-text text-darken-1"><img src="img/icon.png"> &nbsp © Airbnb, Inc</div>
+            <div class="col m6 l6">
+	       	   <a href="" class="col s6 m5 l5 grey-text text-darken-1">Términos y Privacidad</a>
+	       	   <a href="" class="col s6 m4 l4 grey-text text-darken-1">Mapa del sitio</a>
+	       	   <a class="col m1 l1 grey-text text-darken-1 icon-facebook"></a>
+	       	   <a class="col m1 l1 grey-text text-darken-1 icon-twitter"></a>
+	       	   <a class="col m1 l1 grey-text text-darken-1 icon-instagram"></a>
+            </div>
+        </div>
+    </div>
+  </footer>
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/vendor/materialize.min.js"></script>
+	<script type="text/javascript" src="js/vendor/wow.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+	<script>
+     // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDd8_fgrLvnVMl6GaoU3p_rmlX-4X3GrWg",
+        authDomain: "airbnb-61afa.firebaseapp.com",
+        databaseURL: "https://airbnb-61afa.firebaseio.com",
+        storageBucket: "airbnb-61afa.appspot.com",
+        messagingSenderId: "818275464056"
+      };
+      firebase.initializeApp(config);
+    </script>	
+	<script src="js/vendor/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/auth.js"></script>
+</body>
+</html>
