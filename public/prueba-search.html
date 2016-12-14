@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="img/logotype_favicon.ico">
   <link rel="stylesheet" href="css/vendor/materialize.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="css/tcal.css">
   <link rel="stylesheet" href="css/prueba-search.css">
 </head>
 <body>
@@ -44,49 +45,53 @@
             <div class="col l12">
                 <div class="row">
                   <div class="col l12">
-                <!--fechas aa-->
-                      <div class="row">
-                          <div class="input-field col l3">
-                              <p class="last_name">Fechas</p>
-                          </div>
-                          <div class="input-field col l3">
-                              <input id="llegada" type="text" class="input-border" placeholder="Llegada">
-                          </div>
-                          <div class="input-field col l3">
-                              <input id="salida" type="text" class="input-border" placeholder="Salida">
-                          </div> 
-                          <div class="input-field col l3 ">
-                              <select class="browser-default input-border">
-                                  <option value="1">1 huésped</option>
-                                  <option value="2">2 huéspedes</option>
-                                  <option value="3">3 huéspedes</option>
-                              </select>
-                          </div>             
-                      </div>
-                      <div class="divider divider-margin"></div>
-                <!--tipo de habitación-->
+               <!--fechas aa-->
                     <div class="row">
                         <div class="input-field col l3">
+                            <p class="last_name">Fechas</p>
+                        </div>
+                        <div class="input-field col s6 l3">
+                            <input id="llegada" type="text" class="tcal input-border" value="" placeholder="Llegada">
+                        </div>
+                        <div class="input-field col s6 l3">
+                            <input id="salida" type="text" class="tcal input-border" placeholder="Salida">
+                        </div> 
+                        <div class="input-field col s12 l3 ">
+                            <select class="browser-default input-border">
+                                <option value="1">1 huésped</option>
+                                <option value="2">2 huéspedes</option>
+                                <option value="3">3 huéspedes</option>
+                            </select>
+                        </div>             
+                    </div>
+                    <div class="divider divider-margin"></div>
+
+                <!--tipo de habitación-->
+                    <div class="row">
+                        <div class="input-field col s1 col l3">
                              <p class="last_name">Tipo de <br/>habitación <i class="small material-icons">&#xE887;</i></p>
                         </div>
-                        <div class="input-field col l3">
-                            <p>
+                        <div class="input-field col s12 l3">
+                            <div class="lbl-border">
                               <input name="checkboxes" type="checkbox" class="filled-in"  value="check-1" id="checkbox-1"/> 
-                              <label for="checkbox-1">Casa entera</label>
-                            </p>
+                              <label for="checkbox-1"></label>
+                              <p>Casa entera</p>
+                            </div>
                         </div>  
-                        <div class="input-field col l3">
-                          <p>
-                            <input name="checkboxes" type="checkbox" class="filled-in"  value="check-2" id="checkbox-2"/> 
-                            <label for="checkbox-2">Habitación privada</label>
-                          </p>                        
+                        <div class="input-field col s12 l3">
+                          <div class="lbl-border">
+                            <input name="checkboxes" type="checkbox" class="filled-in"  value="check-2" id="checkbox-2"/>
+                            <label for="checkbox-2"></label>
+                            <p class="text">Habitación privada</p>
+                          </div>                   
                         </div>   
-                        <div class="input-field col l3">
-                          <p>
-                            <input name="checkboxes" type="checkbox" class="filled-in"  value="check-3" id="checkbox-3"/> 
-                            <label for="checkbox-3">Habitación compartida</label>
-                          </p>
-                        </div>     
+                        <div class="input-field col s12 l3">
+                            <div class="lbl-border2">
+                                <input name="checkboxes" type="checkbox" class="filled-in"  value="check-3" id="checkbox-3"/> 
+                                <label for="box-3"></label>
+                                <p class="text">Habitación <br>compartida</p>
+                            </div>
+                        </div> 
                     </div>
                     <div class="divider divider-margin"></div>
                     <!--rango de precios-->
@@ -1280,6 +1285,7 @@
   </section>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArYsxLGFN7WByH02KpxcZ_BPWNH9LQH9c&callback=initMap" async defer></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script> 
+    <script src="js/tcal.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/vendor/materialize.min.js"></script>
     <script type="text/javascript" src="js/prueba-search.js"></script>
 </body>

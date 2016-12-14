@@ -23,7 +23,12 @@ nav .input-field label i {
   margin-top: 0.4rem;
   margin-right: 0.6rem; }
 
-.input-border, input[type=text] {
+.input-border {
+  border: 1px solid #AAAAAA !important;
+  height: 2.3rem;
+  border-radius: 2px; }
+
+input[type=text] {
   border: 1px solid #AAAAAA !important;
   height: 2.3rem;
   border-radius: 2px; }
@@ -37,29 +42,50 @@ i.small {
 
 #map {
   height: 86vh;
-  width: 39vw;
-  left: 59rem; }
+  left: 53rem; }
+
+body {
+  overflow-x: hidden; }
 
 /*tipo de habitacion*/
-.input-checkbox {
-  border: 1px solid #AAAAAA;
-  /*height: 2.5rem;*/
-  border-radius: 2px;
-  background-color: #F2F2F2; }
-
 .myCheckbox {
   margin-right: 0px;
   display: inline-block; }
 
+.input-checkbox {
+  border: 1px solid #AAAAAA;
+  border-radius: 2px;
+  background-color: #F2F2F2; }
+
 .text {
   display: inline-block;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-size: bold; }
+
+.promedio {
+  font-size: 0.7rem;
+  margin-left: 80px;
+  margin-top: 35px;
+  border: 1px solid gray;
+  width: 16%; }
 
 .text-alquileres {
   margin-left: 50%; }
 
-/*carrusel*/
+#btn-filtro {
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border: 1px solid black; }
+
+#range-bg {
+  background-image: url(../img/histograma.png);
+  position: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10%; }
+
 .gallery {
   background: #EEE; }
 
@@ -69,15 +95,13 @@ i.small {
   margin-right: 10px;
   background: #8C8;
   counter-increment: gallery-cell; }
-
-/* cell number */
-.gallery-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white; }
+  .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white; }
 
 .row-position {
   position: relative; }
@@ -94,7 +118,7 @@ i.small {
   right: 2rem;
   top: 0.5rem;
   font-weight: bold;
-  color: #bdbdbd; }
+  color: rgba(151, 151, 146, 0.8); }
 
 .section-search-right {
   position: fixed;
