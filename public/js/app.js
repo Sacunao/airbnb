@@ -24,3 +24,7 @@ new WOW().init();
         slidesToScroll: 1
       });
 
+    $('#btn-search').click(function() {
+  		window.location.href = "/prueba-search.html";
+	});
+
