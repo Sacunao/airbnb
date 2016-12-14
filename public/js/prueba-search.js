@@ -44,6 +44,17 @@ function moverSlideFiltroTotal(){
     $("#section-search-right").addClass("section-search-right-click");
   console.log("entra");
 }
+
+function aparecerSliderFiltro(){
+    $("#hidden-fold-mas-filtros").hide();
+    $("#ctnt-fechas").show();
+    $("#hidden-descrip-filtro").show();
+    $("#concepto-btn-filtro").removeClass("concepto-btn-filtro-click");
+    $("#filtros-segundo-fold").removeClass("margin-top-filtro");
+    $("#descripcion-filtros").removeClass("descripcion-filtros-click");
+    $("#cntn-footer").removeClass("cntn-footer");
+}
+
 $("#a-up").hide(); 
 $("#a-up-vecin").hide();
 $("#a-up-idioma").hide();
@@ -53,9 +64,13 @@ var load = function() {
     if (navigator.geolocation) { 
         navigator.geolocation.getCurrentPosition(cargaExitosa, error);
     }
-  	$("#btn-filtro").click(function(e){
-		e.preventDefault();
-		moverSlideFiltroTotal();
+    $("#btn-cancelar").click(function(e){
+        e.preventDefault();
+        aparecerSliderFiltro();
+    });
+    $("#btn-filtro").click(function(e){
+    e.preventDefault();
+    moverSlideFiltroTotal();
     });
 
     $("#a-down").click(function(e){

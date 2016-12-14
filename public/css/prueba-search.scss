@@ -259,73 +259,107 @@ i.small {
   left: 0;
   right: 36rem;
 }
+
+/*filtros*/
 .hidden-fold-mas-filtros {
-  display: none;
-}
+  display: none; }
+
 .descripcion-filtros {
-  z-index: 1;
-}
+  z-index: 1; }
+
 .hidden-fold-mas-filtros-click {
-  z-index: 2;
-}
+  z-index: 2; }
+
 .descripcion-filtros-click {
-  display: none !important;
-}
+  display: none !important; }
+
 .cntn-footer {
-  display: none !important;
-}
+  display: none !important; }
+
 .concepto-btn-filtro-click {
   position: fixed;
   background-color: white;
   top: 6rem;
   width: 57%;
-  z-index: 100;
-}
+  z-index: 100; }
+
 .section-search-right-click {
   position: absolute;
-  top: 14rem;
-}
+  top: 14rem; }
+
 .display-block {
-  display: block;
-}
+  display: block; }
+
 .cnt-btn-slide-dow {
   position: absolute;
   left: 10.2rem;
-  top: 1.8rem;
-}
-.a-down {
-  color: black !important;
-}
+  top: 1.8rem; }
+
+.a-down, .a-up {
+  color: black !important; }
+
 .a-up {
-  color: black !important;
   position: absolute;
-  top: 0rem;
-}
-.mas-servicios {
-  display: none;
-}
-.mas-vecindarios {
-  display: none;
-}
-.mas-idiomas {
-  display: none;
-}
+  top: 0rem; }
+
+.mas-servicios, .mas-vecindarios, .mas-idiomas {
+  display: none; }
+
 .espaciado {
-  height: 24em;
-}
+  height: 24em; }
+
 .cnt-btn-fixed {
   position: fixed;
   bottom: 0;
   padding: 20px;
   width: 54%;
   margin-bottom: 0;
-  background-color: white;
-}
-.margin-top-filtro {
+  background-color: white; }
+.margin-top-filtro{
   margin-top: 6rem;
 }
+
+@media screen and (min-width: 768px) {
+  /* half-width cells for larger devices */
+  .gallery-cell {
+    width: 50%; } }
 .ocultar {
-  display: none;
+  display: none; }
+#btn-cancelar{
+    border: 1px solid #c4c4c4;
+    background: white;
+    color: #484848;
+    padding: 0px 21px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 7%;
+    width: 67%;
+    height: 39px;
+    line-height: 42px;
+
+}
+#aplicarFiltros{
+    background: #FF5A5F;
+    color: white;
+    padding: 0px 21px;    
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 7%;
+    width: 67%;
+    height: 39px;
+    line-height: 42px;
+
+}
+.link-footer{
+    color: #7B7B7B;
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+.link-footer:hover{
+  text-decoration: underline;
+}
+.footer-title{
+  margin-bottom: 0px !important;
 }
 a {
   color: white;
@@ -540,6 +574,9 @@ input[type=range] {
 }
 .rayo {
   color: orange;
+}
+a.link-footer {
+    color: #000000;
 }
 @media screen and (min-width: 768px) {
   .gallery-cell {
