@@ -51,7 +51,7 @@ var cargaExitosa = function(posicion) {
     position: latlon,
     map: mostrarMap,
     icon: iconBase + 'price.png'
-  });
+    });
 
     google.maps.event.addListener(marker, 'click', function() {
     infowindow.open(map,marker);
@@ -142,9 +142,12 @@ var geocodeResult= function(results, status) {
         maxWidth: 300
         }); 
 
+        var iconBase2 = "img/";
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng(value.latitud, value.longitud),
-            map:map
+            map:map,
+            icon: iconBase2 + 'price.png'
+            
         });
 
         google.maps.event.addListener(marker, 'click', function() {
@@ -183,7 +186,8 @@ var geocodeResult= function(results, status) {
         var infowindow = new google.maps.InfoWindow({
         content: contentString3,
         maxWidth: 300
-        });      
+        });  
+    
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng(value.latitud, value.longitud),
             map: map,
