@@ -28,7 +28,14 @@ var cargaExitosa = function(posicion) {
         '<i class="heart-search material-icons"></i>' +
         '<a href="" target="_blank">'+
         '<p class="black-text"><strong class="blue-text">New:</strong>Room in New, quiet and brig</p></a>'+
-        '<p>Habitación privada</p>'+
+        '<div>Habitación privada'+
+        '<div class="cnt-general-starts">'+
+        '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+        '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+        '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+        '<i class="xtra-small color-green material-icons">&#xE839;</i>'+
+        '<i class="xtra-small material-icons">&#xE83A;</i>'+
+        '</div>'+
         '</div>';
 
         var infowindow = new google.maps.InfoWindow({
