@@ -65,8 +65,9 @@ i.small {
 #btn-filtro{
     background-color: transparent;
     color: black;
+    font-weight: bold;
     font-size: 0.8rem;
-    position:;
+    border: 1px solid black;
 }
 #range-bg{
     background-image: url(../img/histograma.png);
