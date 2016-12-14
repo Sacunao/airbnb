@@ -39,12 +39,13 @@ i.small {
   font-size: 1rem; }
 
 #map {
-  height: 86vh;
+  height: 92vh;
   /* width: 42vw; */
-  left: 53rem; }
+  float: right;
+  padding: 0; }
 
 body{
-    overflow-x: hidden;
+    overflow: hidden;
 }
 /*tipo de habitacion*/
 .input-checkbox {
