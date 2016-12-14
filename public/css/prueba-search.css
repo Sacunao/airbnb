@@ -57,12 +57,24 @@ i.small {
 .promedio{
     font-size: 0.7rem;
     margin-left: 80px;
-    margin-top: 70px;
+    margin-top: 35px;
     border: 1px solid gray;
-    width: 15%;}
+    width: 16%;}
 .text-alquileres {
   margin-left: 50%; }
-
+#btn-filtro{
+    background-color: transparent;
+    color: black;
+    font-size: 0.8rem;
+    position:;
+}
+#range-bg{
+    background-image: url(../img/histograma.png);
+    position: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10%;
+}
 /*carrusel*/
 .gallery {
   background: #EEE; }
@@ -190,7 +202,7 @@ word-wrap: break-word;}
     position: absolute;
     overflow: hidden;
     left: 0;
-    top: 15px;
+    top: 24px;
     width: 500px;
     outline: none;
     height: 30px;
@@ -243,7 +255,7 @@ word-wrap: break-word;}
   color: black;
   display: inline-block;
   font: bold 15px/30px Helvetica, Arial;
-  top: 105%;
+  top: 135%;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -330,7 +342,7 @@ input[type=range]:focus {
   width: 100%;
   height: 5px;
   left: 0;
-  top: 25px;
+  top: 35px;
   position: absolute;
   background: #26a69a;
 }
