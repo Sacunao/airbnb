@@ -103,17 +103,35 @@ header{
     text-transform: inherit; 
   }
 
-    .signup-or-separator {
-        background: none;
-        height: 34px;
-        position: relative;
-        text-align: center;
+  .signup-or-separator {
+    background: none;
+    height: 34px;
+    position: relative;
+    text-align: center;
+  }
+  .signup-or-separator--text {
+    background-color: #fafafa;
+    display: inline-block;
+    padding: 8px;
+  }
+  
+  #form-sign-in {
+    position: relative;
+    
+    .icon-mail {
+      position: absolute;
+      bottom: 80%;
+      left: 89%;
+      color: #a2a2a2;
     }
-    .signup-or-separator--text {
-      background-color: #fafafa;
-      display: inline-block;
-      padding: 8px;
+    .icon-lock{
+      position: absolute;
+      bottom: 40%;
+      left: 89%;
+      color: #a2a2a2;    
     }
+  }
+
 
     .modal{
         width: 30vw;

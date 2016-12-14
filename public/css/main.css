@@ -79,6 +79,18 @@ header .signup-or-separator--text {
   background-color: #fafafa;
   display: inline-block;
   padding: 8px; }
+header #form-sign-in {
+  position: relative; }
+  header #form-sign-in .icon-mail {
+    position: absolute;
+    bottom: 80%;
+    left: 89%;
+    color: #a2a2a2; }
+  header #form-sign-in .icon-lock {
+    position: absolute;
+    bottom: 40%;
+    left: 89%;
+    color: #a2a2a2; }
 header .modal {
   width: 30vw;
   max-height: none; }
