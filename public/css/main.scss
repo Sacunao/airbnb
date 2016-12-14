@@ -199,6 +199,75 @@ header{
     }
 }
 
+.housing {
+    width: 80%;
+    margin: 100px auto;
+
+     .slick-slide {
+      margin: 0px 10px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+    .precio {
+        text-align: left !important;
+        color:$color-gray-dark-title;
+        font-size:0.9em;
+    }
+}
+
+.countries {
+    width: 80%;
+    margin: 100px auto;
+
+     .slick-slide {
+      margin: 0px 10px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+    .precio {
+        text-align: left !important;
+        color:$color-gray-dark-title;
+        font-size:0.9em;
+    }
+}
+
+.solidary {
+    width: 80%;
+    margin: 100px auto;
+
+     .slick-slide {
+      margin: 0px 10px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+    .precio {
+        text-align: left !important;
+        color:$color-gray-dark-title;
+        font-size:0.9em;
+    }
+}
+
 footer{
    
    font-size: 14px;
