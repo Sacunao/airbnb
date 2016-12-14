@@ -1,9 +1,44 @@
 /*filtros*/
+var rangeOne = document.querySelector('input[name="rangeOne"]'),
+    rangeTwo = document.querySelector('input[name="rangeTwo"]'),
+    outputOne = document.querySelector('.outputOne'),
+    outputTwo = document.querySelector('.outputTwo'),
+    inclRange = document.querySelector('.incl-range'),
+    updateView = function () {
+      if (this.getAttribute('name') === 'rangeOne') {
+        outputOne.innerHTML = this.value;
+        outputOne.style.left = this.value / this.getAttribute('max') * 100 + '%';
+      } else {
+        outputTwo.style.left = this.value / this.getAttribute('max') * 100 + '%';
+        outputTwo.innerHTML = this.value
+      }
+      if (parseInt(rangeOne.value) > parseInt(rangeTwo.value)) {
+        inclRange.style.width = (rangeOne.value - rangeTwo.value) / this.getAttribute('max') * 100 + '%';
+        inclRange.style.left = rangeTwo.value / this.getAttribute('max') * 100 + '%';
+      } else {
+        inclRange.style.width = (rangeTwo.value - rangeOne.value) / this.getAttribute('max') * 100 + '%';
+        inclRange.style.left = rangeOne.value / this.getAttribute('max') * 100 + '%';
+      }
+    };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    updateView.call(rangeOne);
+    updateView.call(rangeTwo);
+    $('input[type="range"]').on('mouseup', function() {
+      this.blur();
+    }).on('mousedown input', function () {
+      updateView.call(this);
+    });
+  });
+
 function moverSlideFiltroTotal(){
     $("#hidden-fold-mas-filtros").removeClass("hidden-fold-mas-filtros");
     $("#hidden-fold-mas-filtros").addClass("hidden-fold-mas-filtros-click");
     $("#descripcion-filtros").removeClass("descripcion-filtros");
     $("#descripcion-filtros").addClass("descripcion-filtros-click");
+    $("#filtros-segundo-fold").addClass("margin-top-filtro");
+    $("#hidden-descrip-filtro").hide();
+    $("#ctnt-fechas").hide();
     $("#cntn-footer").addClass("cntn-footer");
     $("#concepto-btn-filtro").addClass("concepto-btn-filtro-click");
     $("#section-search-right").addClass("section-search-right-click");
@@ -168,7 +203,7 @@ var geocodeResult= function(results, status) {
     infowindow.open(map,marker);
     });
 
-    $("#checkbox-1").click(function(){
+    $("#check-1").click(function(){
        var features = [];
        var array = CargarListaCasa();
        var mapOptions = {
@@ -213,7 +248,7 @@ var geocodeResult= function(results, status) {
        });     
     });
 
-    $("#checkbox-2").click(function(){ 
+    $("#check-2").click(function(){ 
       var features = [];
        var array = CargarListaHabitacion();
        var mapOptions = {
@@ -259,7 +294,7 @@ var geocodeResult= function(results, status) {
 
        });
     });
-    $("#checkbox-3").click(function(){   
+    $("#check-3").click(function(){   
       var features = [];
        var array = CargarListaHbitacionCompartida();
        var mapOptions = {
@@ -282,7 +317,6 @@ var geocodeResult= function(results, status) {
         '<i class="xtra-small material-icons">&#xE83A;</i>'+
         '</div>'+
         '</div>';
-
         var infowindow = new google.maps.InfoWindow({
         content: contentString4,
         maxWidth: 300
@@ -301,9 +335,140 @@ var geocodeResult= function(results, status) {
 
      });
             
-  
     });
+
+    $("#habitaciones").change(function(){
+       var features = [];
+       var array = CargarListaHbitacionCompartida();
+       var mapOptions = {
+            zoom: 14,
+            center:  new google.maps.LatLng(firstPosition.lat(), firstPosition.lng())
+       };
+       var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+       $("#aplicarFiltros").click(function(){
+           $.each(array, function (index, value) { 
+                 var contentString5 = '<img src="img/31.jpg" width="300px">'+
+                '<i class="heart-search material-icons"></i>' +
+                '<a href="" target="_blank">'+
+                '<p class="black-text">Flowery Inn Villa with garden</p></a>'+
+                '<div>Casa/apto'+
+                '<div class="cnt-general-starts">'+
+                '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+                '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+                '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+                '<i class="xtra-small color-green material-icons">&#xE839;</i>'+
+                '<i class="xtra-small material-icons">&#xE83A;</i>'+
+                '</div>'+
+                '</div>';
+                var infowindow = new google.maps.InfoWindow({
+                content: contentString5,
+                maxWidth: 300
+                });  
+
+                var iconBase5 = "img/";    
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(value.latitud, value.longitud),
+                    map: map,
+                    icon: iconBase5 + 'price.png'
+                });
+
+                google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map,marker);
+                }); 
+
+            });
+ 
+       });
        
+    }); 
+    $("#banos").change(function(){
+       var features = [];
+       var array = CargarListaCasa();
+       var mapOptions = {
+            zoom: 14,
+            center:  new google.maps.LatLng(firstPosition.lat(), firstPosition.lng())
+       };
+       var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+       $("#aplicarFiltros").click(function(){
+           $.each(array, function (index, value) { 
+                 var contentString6 = '<img src="img/32.jpg" width="300px">'+
+                '<i class="heart-search material-icons"></i>' +
+                '<a href="" target="_blank">'+
+                '<p class="black-text">Flowery Inn Villa with garden</p></a>'+
+                '<div>Casa/apto'+
+                '<div class="cnt-general-starts">'+
+                '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+                '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+                '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+                '<i class="xtra-small color-green material-icons">&#xE839;</i>'+
+                '<i class="xtra-small material-icons">&#xE83A;</i>'+
+                '</div>'+
+                '</div>';
+                var infowindow = new google.maps.InfoWindow({
+                content: contentString6,
+                maxWidth: 300
+                });  
+
+                var iconBase6 = "img/";    
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(value.latitud, value.longitud),
+                    map: map,
+                    icon: iconBase6 + 'price.png'
+                });
+
+                google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map,marker);
+                }); 
+
+            });
+ 
+       });
+       
+    }); 
+    $("#camas").change(function(){
+       var features = [];
+       var array = CargarListaHabitacion();
+       var mapOptions = {
+            zoom: 14,
+            center:  new google.maps.LatLng(firstPosition.lat(), firstPosition.lng())
+       };
+       var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+       $("#aplicarFiltros").click(function(){
+           $.each(array, function (index, value) { 
+                 var contentString7 = '<img src="img/34.jpg" width="300px">'+
+                '<i class="heart-search material-icons"></i>' +
+                '<a href="" target="_blank">'+
+                '<p class="black-text">Flowery Inn Villa with garden</p></a>'+
+                '<div>Casa/apto'+
+                '<div class="cnt-general-starts">'+
+                '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+                '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+                '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+                '<i class="xtra-small color-green material-icons">&#xE839;</i>'+
+                '<i class="xtra-small material-icons">&#xE83A;</i>'+
+                '</div>'+
+                '</div>';
+                var infowindow = new google.maps.InfoWindow({
+                content: contentString7,
+                maxWidth: 300
+                });  
+
+                var iconBase7 = "img/";    
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(value.latitud, value.longitud),
+                    map: map,
+                    icon: iconBase7 + 'price.png'
+                });
+
+                google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map,marker);
+                }); 
+
+            });
+ 
+       });
+       
+    });   
 }
 
 $(document).ready(load);

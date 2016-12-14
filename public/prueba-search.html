@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="img/logotype_favicon.ico">
   <link rel="stylesheet" href="css/vendor/materialize.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" type="text/css" href="css/tcal.css">
   <link rel="stylesheet" href="css/prueba-search.css">
 </head>
 <body>
@@ -39,23 +40,23 @@
     </div>   
   </header>
   <section class="section-search row">
-    <div class="col l7 section-search-right" id="section-search-right">
-        <div class="row">
+    <div class="col s12 l7 section-search-right" id="section-search-right">
+        <div class="row" id="tipo-selecion">
             <div class="col l12">
-                <div class="row">
+                <div class="row" id="filtros-segundo-fold">
                   <div class="col l12">
                 <!--fechas aa-->
-                      <div class="row">
+                      <div class="row" id="ctnt-fechas">
                           <div class="input-field col l3">
                               <p class="last_name">Fechas</p>
                           </div>
-                          <div class="input-field col l3">
-                              <input id="llegada" type="text" class="input-border" placeholder="Llegada">
+                          <div class="input-field col s6 l3">
+                              <input id="llegada" type="text" class="tcal input-border"  value="" placeholder="Llegada">
                           </div>
-                          <div class="input-field col l3">
-                              <input id="salida" type="text" class="input-border" placeholder="Salida">
+                          <div class="input-field col s6 l3">
+                              <input id="salida" type="text" class="tcal input-border" placeholder="Salida">
                           </div> 
-                          <div class="input-field col l3 ">
+                          <div class="input-field col s12 l3 ">
                               <select class="browser-default input-border">
                                   <option value="1">1 huésped</option>
                                   <option value="2">2 huéspedes</option>
@@ -66,26 +67,32 @@
                       <div class="divider divider-margin"></div>
                 <!--tipo de habitación-->
                     <div class="row">
-                        <div class="input-field col l3">
+                        <div class="input-field col s12 l3">
                              <p class="last_name">Tipo de <br/>habitación <i class="small material-icons">&#xE887;</i></p>
                         </div>
-                        <div class="input-field col l3">
-                            <p>
-                              <input name="checkboxes" type="checkbox" class="filled-in"  value="check-1" id="checkbox-1"/> 
-                              <label for="checkbox-1">Casa entera</label>
-                            </p>
+                        <div class="input-field col s12 l3">
+                            <div class="lbl-border">
+                              <input name="checkboxes" type="checkbox" class="filled-in"  value="check-1" id="check-1"/> 
+                              <label for="check-1"></label>
+                              <p class="text">Casa entera</p>
+                              <i class=" material-icons">store</i> 
+                            </div>
                         </div>  
-                        <div class="input-field col l3">
-                          <p>
-                            <input name="checkboxes" type="checkbox" class="filled-in"  value="check-2" id="checkbox-2"/> 
-                            <label for="checkbox-2">Habitación privada</label>
-                          </p>                        
+                        <div class="input-field col s12 l3">
+                          <div class="lbl-border">
+                            <input name="checkboxes" type="checkbox" class="filled-in"  value="check-2" id="check-2"/>
+                            <label for="check-2"></label>
+                            <p class="text">Habitación privada</p>
+                              <i class=" material-icons">store</i> 
+                          </div>                  
                         </div>   
                         <div class="input-field col l3">
-                          <p>
-                            <input name="checkboxes" type="checkbox" class="filled-in"  value="check-3" id="checkbox-3"/> 
-                            <label for="checkbox-3">Habitación compartida</label>
-                          </p>
+                          <div class="lbl-border2">
+                                <input name="checkboxes" type="checkbox" class="filled-in"  value="check-3" id="check-3"/> 
+                                <label for="check-3"></label>
+                                <p class="text">Habitación <br>compartida</p>
+                                <i class=" material-icons">store</i> 
+                            </div>
                         </div>     
                     </div>
                     <div class="divider divider-margin"></div>
@@ -95,11 +102,15 @@
                               <p class="last_name">Rango de precios</p>
                           </div>
                           <div class="input-field col l9">
-                              <form action="#">
-                                  <p class="range-field">
-                                      <input type="range" id="test5" min="0" max="100" />
-                                  </p>
-                              </form>
+                              <section class="range-slider container" id="range-bg">
+                                <span class="output outputOne"></span>
+                                <span class="output outputTwo"></span>
+                                <span class="full-range"></span>
+                                <span class="incl-range"></span>
+                                    <input name="rangeOne" value="0" min="0" max="3000" step="1" type="range">
+                                    <input name="rangeTwo" value="3000" min="0" max="3000" step="1" type="range">
+                            </section>
+                            <p class="promedio">S/.252 de media</p>
                           </div>            
                       </div>
                       <div class="divider divider-margin"></div> 
@@ -135,7 +146,7 @@
                               <p class="text-alquileres">Más de 300 alquileres</p>
                           </div>
                       </div>
-                      <div class="row">
+                      <div class="row" id="hidden-descrip-filtro">
                           <p>Introduce las fechas para ver el precio total. Ten en cuenta que se aplicarán tarifas adicionales y es posible que se añadan impuestos.</p>
                       </div>
                   </div> 
@@ -147,30 +158,52 @@
                           <p class="last_name">Tamaño</p>
                       </div>
                       <div class="input-field col l3 ">
-                          <select class="browser-default input-border">
+                          <select id="habitaciones" class="browser-default input-border">
                               <option value="1">Habitaciones</option>
                               <option value="2">1 dormitorio</option>
                               <option value="3">2 dormitorios</option>
                               <option value="4">3 dormitorios</option>
                               <option value="5">4 dormitorios</option>
+                              <option value="6">5 dormitorios</option>
+                              <option value="7">6 dormitorio</option>
+                              <option value="8">7 dormitorios</option>
+                              <option value="9">8 dormitorios</option>
+                              <option value="10">9 dormitorios</option>
+                              <option value="11">10 dormitorios</option>
                           </select>
                       </div>
                       <div class="input-field col l3 ">
-                          <select class="browser-default input-border">
+                          <select id="banos" class="browser-default input-border">
                               <option value="1">Baños</option>
-                              <option value="2">0 baños</option>
-                              <option value="3">0.5 baños</option>
-                              <option value="4">1 baño</option>
-                              <option value="5">1.5 baños</option>
+                              <option value="2">1 baño</option>
+                              <option value="3">2 baños</option>
+                              <option value="4">3 baño</option>
+                              <option value="5">4 baños</option>
+                              <option value="6">5 baños</option>
+                              <option value="7">6 baño</option>
+                              <option value="8">7 baños</option>
+                              <option value="9">8 baños</option>
                           </select>
                       </div>
                       <div class="input-field col l3 ">
-                          <select class="browser-default input-border">
+                          <select id="camas" class="browser-default input-border">
                               <option value="1">Camas</option>
                               <option value="2">1 Cama</option>
                               <option value="3">2 Camas</option>
                               <option value="4">3 Camas</option>
                               <option value="5">4 Camas</option>
+                              <option value="6">5 Camas</option>
+                              <option value="7">6 Camas</option>
+                              <option value="8">7 Camas</option>
+                              <option value="9">8 Camas</option>
+                              <option value="10">9 Camas</option>
+                              <option value="11">10 Camas</option>
+                              <option value="12">11 Camas</option>
+                              <option value="13">12 Camas</option>
+                              <option value="14">13 Camas</option>
+                              <option value="15">14 Camas</option>
+                              <option value="16">15 Camas</option>
+                              <option value="17">16 Camas</option>
                           </select>
                       </div>
                     </div>
@@ -592,7 +625,7 @@
                         </div>
                         <div class="col l6">
                           <div class="row">
-                              <a class="waves-effect waves-light btn-large">Aplicar Filtros</a>
+                              <a id="aplicarFiltros" class="waves-effect waves-light btn-large">Aplicar Filtros</a>
                           </div>
                         </div>
                       </div>
@@ -1257,6 +1290,7 @@
     </div>
   </section>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArYsxLGFN7WByH02KpxcZ_BPWNH9LQH9c&callback=initMap" async defer></script>
+    <script src="js/tcal.js" type="text/javascript"></script>
   	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script> 
     <script type="text/javascript" src="js/vendor/materialize.min.js"></script>
     <script type="text/javascript" src="js/prueba-search.js"></script>
