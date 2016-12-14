@@ -1,11 +1,37 @@
 @import "_variables";
 
 footer{
+   
+   font-size: 14px;
 
   .browser-default{
-    margin-top: 35px;
+    margin-top: 28px;
     font-weight: bold;
     border:1px solid $color-grey-select;
   }
-  
+
+  h5{
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .grey-text:hover{
+    color:$color-cyan-hover !important;
+  }
+}
+
+@media(max-width: 480px) {
+
+    footer{
+
+      .browser-default{
+        margin-left: 15px;
+        margin-top: 3px;
+      }
+
+      .s12{
+        margin-top: 9px;
+      }
+
+    }
 }
