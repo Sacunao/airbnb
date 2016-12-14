@@ -37,3 +37,4 @@ var rangeOne = document.querySelector('input[name="rangeOne"]'),
 			updateView.call(this);
 		});
 	});
+

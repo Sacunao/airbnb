@@ -40,8 +40,7 @@ i.small {
 
 #map {
   height: 86vh;
-  /* width: 42vw; */
-  left: 53rem; }
+ }
 
 /*tipo de habitacion*/
 .input-checkbox {
@@ -112,13 +111,6 @@ i.small {
   font-weight: bold;
   color: rgba(151, 151, 146, 0.8); }
 
-.section-search-right {
-  position: fixed;
-  top: 10%;
-  left: 0;
-  bottom: 0;
-  width: 60%;
-  overflow-y: scroll; }
 
 *::-webkit-input-placeholder {
   /* Google Chrome y Safari */
