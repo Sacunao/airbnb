@@ -1,0 +1,122 @@
+@import "variables";
+
+body{
+	font-family: $font-roboto;
+}
+
+header{
+	
+	nav{
+	background-color: white;
+	box-shadow: none;
+    padding-bottom: 2em;
+		.logo{
+			padding: 2vh;
+		    width: 7.5vh;
+		    height: 7.5vh;
+		}
+	}
+    
+ 
+    .nav-wrapper{
+		a{
+			color: $color-gray-dark-title;
+            cursor: pointer;
+            font-weight: 500;
+		}
+        .auth{
+            margin: 1.2em;
+            border-radius: 50%;
+		    width: 4vh;
+		    height: 4vh;
+            color:3px $color-gray-dark-title solid;
+        }
+    }
+
+	.title{
+		.header-title{
+			color: $color-gray-dark-title;
+			font-weight: 900;
+            padding-top: 1.1em;
+		}
+		
+        
+		h3 {
+			color: $color-gray-light-text;
+		}
+        
+        p {
+            color: #717171;
+            font-size: 1.2em;
+        }
+	}	
+
+	.hero{
+		background: url(https://a0.muscache.com/airbnb/static/engagement/p1/large/posters_sm.jpg);
+		background-position: bottom center;
+	    background-size: 1596px auto;
+	    background-repeat: repeat-x;
+	    left: -60px;
+	    height: 90vh;
+
+	}
+
+	.header-text{
+		margin-bottom: 1.5em;
+	}
+
+	.button-header{
+		border-radius: 50px;
+		border: $color-border solid;
+		width: 20em;
+		padding: 0.5em 0.8em;
+        color: #717171;
+        font-weight: 500;
+        cursor: pointer;
+	}
+	
+    .modal{
+        width: 30vw;
+    }
+    
+    #login{
+        float: none;
+        background-color: $color-rojo-airbnb;
+        width: 80%;
+        color: white;
+    }
+    
+    .modal-content input{
+        margin: 0 auto;
+        margin-bottom: 0.5em;
+        width: 97%;
+        padding: 0.5em 0.3em;
+        border: 1px $color-border solid;
+    }
+
+}
+
+@media (max-width: 468px){
+    header{
+        .title{
+            .header-title{
+                padding-top: 0.5em;
+                text-align: center;
+                margin-bottom: 0.3em;
+            }
+		}
+        h3{
+            font-size: 1.7em;
+        }
+        
+        .hero{
+            height: 100vh;
+            background-size: cover;
+        }
+        
+        .modal{
+            width: 70vw;
+        }
+
+    }
+}
