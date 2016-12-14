@@ -20,7 +20,7 @@ var cargaExitosa = function(posicion) {
         mapTypeControl:false,
         zoomControl:false,
         streetViewControl:false,
-    };
+        };
     
     var mostrarMap = new google.maps.Map(document.getElementById('map'), myOptions);
 
@@ -231,17 +231,20 @@ var geocodeResult= function(results, status) {
         var infowindow = new google.maps.InfoWindow({
         content: contentString4,
         maxWidth: 300
-        });      
+        });  
+
+        var iconBase4 = "img/";    
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng(value.latitud, value.longitud),
             map: map,
+            icon: iconBase4 + 'price.png'
         });
 
         google.maps.event.addListener(marker, 'click', function() {
         infowindow.open(map,marker);
         });
 
-       });
+     });
             
   
     });
