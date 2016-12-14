@@ -54,7 +54,12 @@ i.small {
   display: inline-block;
   font-size: 0.72rem;
   font-size: bold; }
-
+.promedio{
+    font-size: 0.7rem;
+    margin-left: 80px;
+    margin-top: 70px;
+    border: 1px solid gray;
+    width: 15%;}
 .text-alquileres {
   margin-left: 50%; }
 
@@ -230,13 +235,12 @@ word-wrap: break-word;}
 }
 
 .output {
-  position: fixed;
+  position: absolute;
   border:none;
   width: 40px;
   height: 33px;
   text-align: center;
-  color: #AAAAAA;
-
+  color: black;
   display: inline-block;
   font: bold 15px/30px Helvetica, Arial;
   top: 105%;
@@ -322,16 +326,18 @@ input[type=range]:focus {
   outline: none;
 }
 
-.full-range,
 .incl-range {
   width: 100%;
   height: 5px;
   left: 0;
-  top: 21px;
+  top: 25px;
   position: absolute;
-  background: #DDD;
+  background: #26a69a;
 }
 
-.incl-range {
-  background: #26a69a;
+input[type=range] + .thumb {
+    background-color: #fff;
+}
+.rayo{
+    color: orange;
 }
