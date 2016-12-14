@@ -1,9 +1,64 @@
+/*filtros*/
+function moverSlideFiltroTotal(){
+    $("#hidden-fold-mas-filtros").removeClass("hidden-fold-mas-filtros");
+    $("#hidden-fold-mas-filtros").addClass("hidden-fold-mas-filtros-click");
+    $("#descripcion-filtros").removeClass("descripcion-filtros");
+    $("#descripcion-filtros").addClass("descripcion-filtros-click");
+    $("#cntn-footer").addClass("cntn-footer");
+    $("#concepto-btn-filtro").addClass("concepto-btn-filtro-click");
+    $("#section-search-right").addClass("section-search-right-click");
+  console.log("entra");
+}
+$("#a-up").hide(); 
+$("#a-up-vecin").hide();
+$("#a-up-idioma").hide();
+
 var firstPosition = undefined;
 var load = function() {
     if (navigator.geolocation) { 
         navigator.geolocation.getCurrentPosition(cargaExitosa, error);
     }
+  	$("#btn-filtro").click(function(e){
+		e.preventDefault();
+		moverSlideFiltroTotal();
+    });
 
+    $("#a-down").click(function(e){
+      e.preventDefault();
+      $("#mas-servicios").removeClass("mas-servicios");
+      $("#a-down").hide();
+      $("#a-up").show(); 
+    });
+    $("#a-up").click(function(e){
+      $("#mas-servicios").addClass("mas-servicios");
+      $("#a-up").hide();
+      $("#a-down").show();
+    });
+
+    $("#a-down-vecin").click(function(e){
+      e.preventDefault();
+      $("#mas-vecindarios").removeClass("mas-vecindarios");
+      $("#a-down-vecin").hide();
+      $("#a-up-vecin").show(); 
+    });
+    $("#a-up-vecin").click(function(e){
+      e.preventDefault();
+      $("#mas-vecindarios").addClass("mas-vecindarios");
+      $("#a-up-vecin").hide();
+      $("#a-down-vecin").show();
+    });
+    $("#a-down-idioma").click(function(e){
+      e.preventDefault();
+      $("#mas-idiomas").removeClass("mas-idiomas");
+      $("#a-down-idioma").hide();
+      $("#a-up-idioma").show();
+    });
+    $("#a-up-idioma").click(function(e){
+      e.preventDefault();
+      $("#mas-idiomas").addClass("mas-idiomas");
+      $("#a-up-idioma").hide();
+      $("#a-down-idioma").show();      
+    });
 
 };
 

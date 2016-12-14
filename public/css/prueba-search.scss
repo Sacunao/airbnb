@@ -158,6 +158,61 @@ i.small {
     left: 0;
     right: 36rem;
 }
+
+/*filtros*/
+.hidden-fold-mas-filtros{
+    display: none;
+}
+.descripcion-filtros{
+    z-index: 1;
+}
+.hidden-fold-mas-filtros-click{
+    z-index: 2;
+}
+.descripcion-filtros-click{
+    display: none !important;
+}
+.cntn-footer{
+    display: none !important;
+}
+.concepto-btn-filtro-click{
+    position: fixed;
+    top: 6rem;
+    width: 63%;
+}
+.section-search-right-click{
+    position: absolute;
+    top: 14rem;   
+}
+.display-block{
+    display: block;
+}
+.cnt-btn-slide-dow{
+    position: absolute;
+    left: 10.2rem;
+    top: 1.8rem;  
+}
+.a-down, .a-up{
+    color: black !important;
+}
+.a-up{
+    position: absolute;
+    top: 0rem;
+}
+.mas-servicios, .mas-vecindarios, .mas-idiomas{
+    display: none;
+}
+.espaciado{
+    height: 24em;
+}
+.cnt-btn-fixed{
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    width: 54%;
+    margin-bottom: 0;    
+    background-color: white;
+}
 @media screen and ( min-width: 768px ) {
   /* half-width cells for larger devices */
   .gallery-cell { width: 50%; }
