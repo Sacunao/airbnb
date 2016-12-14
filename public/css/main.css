@@ -54,7 +54,8 @@ header .button-header {
   font-weight: 500;
   cursor: pointer; }
 header .modal {
-  width: 30vw; }
+  width: 30vw;
+  max-height: none; }
 header #login {
   float: none;
   background-color: #FF7E82;
