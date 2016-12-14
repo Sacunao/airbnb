@@ -224,6 +224,33 @@ header{
     left: 39.5%;    
 }
 
+/*Sección Ser Anfitrión*/
+#be-host{
+  .l5{
+    float:left;
+      b{
+        font-size: 2em;
+        line-height: 1.3em;
+      }
+      p{
+        font-size: 1.2em;
+      }
+  }
+    img{
+      width:90%;
+      float:right;
+    }
+    button{
+      border-radius: 20px;
+      font-weight: bold;
+      text-transform: inherit;
+    }
+
+}
+
+
+
+/*Footer*/
 footer{
    
    font-size: 14px;

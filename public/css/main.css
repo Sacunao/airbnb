@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*colores*/
 /*Fuentes*/
 * {
@@ -159,6 +160,23 @@ header .modal-content input {
   top: 90%;
   left: 39.5%; }
 
+/*Secci├│n Ser Anfitri├│n*/
+#be-host .l5 {
+  float: left; }
+  #be-host .l5 b {
+    font-size: 2em;
+    line-height: 1.3em; }
+  #be-host .l5 p {
+    font-size: 1.2em; }
+#be-host img {
+  width: 90%;
+  float: right; }
+#be-host button {
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: inherit; }
+
+/*Footer*/
 footer {
   font-size: 14px; }
   footer .browser-default {
