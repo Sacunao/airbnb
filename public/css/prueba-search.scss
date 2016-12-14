@@ -1,20 +1,4 @@
-/*tipo de habitacion*/
-/*carrusel*/
-/* cell number */
-/*checkbox*/
-/*calendar*/
-/*filtros*/
-/* half-width cells for larger devices */
-/*
-#content-servicios{
-  margin-bottom: 0px;
-}*/
-/*# sourceMappingURL=prueba-search.css.map */
-/* TMRE*/
-/*tipo de habitacion*/
-/*carrusel*/
-/* cell number */
-/*checkbox*/
+
 /*calendar*/
 /*# sourceMappingURL=prueba-search.css.map */
 /* rango*/
@@ -538,6 +522,18 @@ input[type=range] {
 .rayo {
   color: orange;
 }
+.link-footer {
+    color: #7B7B7B;
+    font-weight: normal;
+    font-size: 0.9rem;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.footer-title {
+    margin-bottom: 0px !important;
+}
+
 @media screen and (min-width: 768px) {
   .gallery-cell {
     width: 50%;

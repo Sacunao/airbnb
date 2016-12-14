@@ -572,6 +572,42 @@ nav .input-field label.active i{
     color: black !important;
     font-size: 28px;
 }
+#btn-cancelar{
+     border: 1px solid #c4c4c4;
+    background: white;
+    color: #484848;
+    padding: 0px 21px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 7%;
+    width: 67%;
+    height: 39px;
+    line-height: 42px;
+
+}
+#aplicarFiltros{
+    background: #FF5A5F;
+    color: white;
+    padding: 0px 21px;    
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 7%;
+    width: 67%;
+    height: 39px;
+    line-height: 42px;
+
+}
+.link-footer{
+    color: #7B7B7B;
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+.link-footer:hover{
+  text-decoration: underline;
+}
+.footer-title{
+  margin-bottom: 0px !important;
+}
 
 @media all and (max-width : 450px){
 #tipo-selecion{
@@ -593,5 +629,4 @@ nav .input-field label.active i{
 .input-field input[type=search]{
     padding-left: 0;
 }
-
 
