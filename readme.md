@@ -59,3 +59,6 @@ Se decidió realizar el trabajo de la web bajo el framework de scrum para trabaj
 #####TRELLO
 
 ![Imagen](http://4.1m.yt/242nMCb.png "Imagen")
+
+
+
