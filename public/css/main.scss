@@ -6,6 +6,10 @@
 
  body{
 	font-family: $font-roboto;
+
+  .container {
+    width: 77%;
+  }
 }
 
 header{
@@ -61,7 +65,7 @@ header{
 	    background-size: 1596px auto;
 	    background-repeat: repeat-x;
 	    left: -60px;
-	    height: 90vh;
+	    height: 98vh;
 
 	}
 
@@ -178,7 +182,7 @@ header{
 
 .slider {
     width: 80%;
-    margin: 100px auto;
+    margin: 2rem auto;
 
      .slick-slide {
       margin: 0px 10px;
@@ -199,8 +203,124 @@ header{
     }
 }
 
-footer{
-   
+.xtra-small{
+    font-size: 1.3em;
+}
+
+.color-green{
+    color: #008489;
+}
+.color-gris{
+    color: #767676;
+}
+.cnt-general-starts{
+    display: inline-block;
+    float: left;
+    overflow: auto;    
+}
+.cnt-starts span{
+    position: absolute;
+    top: 90%;
+    left: 39.5%;    
+}
+
+/*Sección Ser Anfitrión*/
+#be-host{
+  .l5{
+    float:left;
+      b{
+        font-size: 2em;
+        line-height: 1.3em;
+      }
+      p{
+        font-size: 1.2em;
+      }
+  }
+    img{
+      width:90%;
+      float:right;
+    }
+    button{
+      border-radius: 20px;
+      font-weight: bold;
+      text-transform: inherit;
+    }
+
+}
+
+.housing {
+    width: 80%;
+    margin: 2.5rem auto;
+
+    .slick-slide {
+      margin: 0px 10px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+    .precio {
+        text-align: left !important;
+        color:$color-gray-dark-title;
+        font-size:0.9em;
+    }
+}
+
+.countries {
+    width: 80%;
+    margin: 2.5rem auto;
+
+     .slick-slide {
+      margin: 0px 10px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+    .precio {
+        text-align: left !important;
+        color:$color-gray-dark-title;
+        font-size:0.9em;
+    }
+}
+
+.solidary {
+    width: 80%;
+    margin: 2.5rem auto;
+
+     .slick-slide {
+      margin: 0px 10px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+    .precio {
+        text-align: left !important;
+        color:$color-gray-dark-title;
+        font-size:0.9em;
+    }
+}
+
+
+
+/*Footer*/
+footer{   
    font-size: 14px;
 
   .browser-default{
