@@ -207,17 +207,33 @@ var geocodeResult= function(results, status) {
        };
        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
         
-       $.each(array, function (index, value) {      
-        var marker = new google.maps.Marker({
+       $.each(array, function (index, value) { 
+         var contentString4 = '<img src="img/43.jpg" width="300px">'+
+        '<i class="heart-search material-icons"></i>' +
+        '<a href="" target="_blank">'+
+        '<p class="black-text">Flowery Inn Villa with garden</p></a>'+
+        '<div>Casa/apto'+
+        '<div class="cnt-general-starts">'+
+        '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+        '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+        '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+        '<i class="xtra-small color-green material-icons">&#xE839;</i>'+
+        '<i class="xtra-small material-icons">&#xE83A;</i>'+
+        '</div>'+
+        '</div>';
 
+        var infowindow = new google.maps.InfoWindow({
+        content: contentString4,
+        maxWidth: 300
+        });      
+        var marker = new google.maps.Marker({
             position: new google.maps.LatLng(value.latitud, value.longitud),
             map: map,
-            clickable: false,
-            content: 'Map Marker'
         });
 
-
-        console.log("paso" + index);
+        google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map,marker);
+        });
 
        });
             
