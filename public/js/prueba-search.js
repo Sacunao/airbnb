@@ -187,10 +187,12 @@ var geocodeResult= function(results, status) {
         content: contentString3,
         maxWidth: 300
         });  
-    
+        
+        var iconBase3 = "img/";
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng(value.latitud, value.longitud),
             map: map,
+            icon: iconBase3 + 'price.png'
         });
 
         google.maps.event.addListener(marker, 'click', function() {
