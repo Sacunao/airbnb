@@ -53,8 +53,35 @@ header .button-header {
   color: #717171;
   font-weight: 500;
   cursor: pointer; }
+header #register-facebook {
+  border: 1px solid #4568b2;
+  background-color: #4568b2;
+  width: 100%;
+  color: #fff;
+  padding: 1.4rem 1rem 3.4rem 1rem;
+  font-weight: normal;
+  text-transform: inherit; }
+header #register-google {
+  border: 1px solid #588cfb;
+  background-color: #ffffff;
+  width: 100%;
+  color: #000;
+  margin-top: 1.2rem;
+  padding: 1.4rem 1rem 3.4rem 1rem;
+  font-weight: normal;
+  text-transform: inherit; }
+header .signup-or-separator {
+  background: none;
+  height: 34px;
+  position: relative;
+  text-align: center; }
+header .signup-or-separator--text {
+  background-color: #fafafa;
+  display: inline-block;
+  padding: 8px; }
 header .modal {
-  width: 30vw; }
+  width: 30vw;
+  max-height: none; }
 header #login {
   float: none;
   background-color: #FF7E82;

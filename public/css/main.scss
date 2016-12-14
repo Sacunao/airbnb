@@ -66,7 +66,6 @@ header{
 	    background-repeat: repeat-x;
 	    left: -60px;
 	    height: 98vh;
-
 	}
 
 	.header-text{
@@ -78,13 +77,47 @@ header{
 		border: $color-border solid;
 		width: 20em;
 		padding: 0.5em 0.8em;
-        color: #717171;
-        font-weight: 500;
-        cursor: pointer;
+    color: #717171;
+    font-weight: 500;
+    cursor: pointer;
 	}
 	
+  #register-facebook{
+    border: 1px solid #4568b2;
+    background-color: #4568b2;
+    width: 100%;
+    color: #fff;
+    padding: 1.4rem 1rem 3.4rem 1rem;
+    font-weight: normal;
+    text-transform: inherit; 
+  }
+  
+  #register-google{
+    border: 1px solid #588cfb;
+    background-color: #ffffff;
+    width: 100%;
+    color: #000;
+    margin-top: 1.2rem;
+    padding: 1.4rem 1rem 3.4rem 1rem;
+    font-weight: normal;
+    text-transform: inherit; 
+  }
+
+    .signup-or-separator {
+        background: none;
+        height: 34px;
+        position: relative;
+        text-align: center;
+    }
+    .signup-or-separator--text {
+      background-color: #fafafa;
+      display: inline-block;
+      padding: 8px;
+    }
+
     .modal{
         width: 30vw;
+        max-height: none;;      
     }
     
     #login{
