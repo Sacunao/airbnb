@@ -53,7 +53,7 @@ var cargaExitosa = function(posicion) {
     icon: iconBase + 'price.png'
   });
 
-        google.maps.event.addListener(marker, 'click', function() {
+    google.maps.event.addListener(marker, 'click', function() {
     infowindow.open(map,marker);
     });
   
@@ -86,11 +86,34 @@ var geocodeResult= function(results, status) {
         var marker = new google.maps.Marker(markerOptions);
         marker.setMap(map);
 
-           
-    } else{
+        var contentString1 = '<img src="img/36.jpg" width="300px">'+
+        '<i class="heart-search material-icons"></i>' +
+        '<a href="" target="_blank">'+
+        '<p class="black-text">Flowery Inn Villa with garden</p></a>'+
+        '<div>Casa/apto'+
+        '<div class="cnt-general-starts">'+
+        '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+        '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+        '<i class="xtra-small color-green material-icons">&#xE838;</i>'+
+        '<i class="xtra-small color-green material-icons">&#xE839;</i>'+
+        '<i class="xtra-small material-icons">&#xE83A;</i>'+
+        '</div>'+
+        '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+        content: contentString1,
+        maxWidth: 300
+        
+
+     });      
+    }else{
 
       alert("Geocoding no tuvo éxito debido a: " + status);
     }
+
+    google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+    });
     $("#checkbox-1").click(function(){
        var features = [];
        var array = CargarListaCasa();
